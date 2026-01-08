@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PUKNO – Your personal AI memory for macOS</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="assets/logo.png" alt="PUKNO icon" class="logo-icon" />
+                PUKNO
+            </div>
+
+            <nav>
+                <a href="#overview">Overview</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="#features">Features</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#faq">FAQ</a>
+                <a class="nav-cta" href="#download">Download</a>
+            </nav>
+        </header>
+
+        <div class="content-wrapper">
+            <!-- HERO -->
+            <section class="hero" id="top">
+                <div class="hero-grid">
+                    <div class="hero-copy">
+                        <div class="eyebrow">
+                            <span class="pill"
+                                ><i class="fa-brands fa-apple"></i> Mac
+                                App</span
+                            >
+                            <span class="pill"
+                                ><i class="fa-solid fa-lock"></i> Local &
+                                Secure</span
+                            >
+                            <span class="pill"
+                                ><i class="fa-solid fa-brain"></i> AI
+                                memory</span
+                            >
+                            <span class="pill"
+                                ><i class="fa-solid fa-key"></i> Encrypted
+                            </span>
+                        </div>
+
+                        <h1>PUKNO</h1>
+                        <div class="tagline">Your personal AI memory</div>
+
+                        <p class="lead">
+                            PUKNO continuously captures your digital activity
+                            and turns it into searchable, contextual memory — so
+                            you can instantly recall what you read, built,
+                            watched, or discussed.
+                        </p>
+
+                        <div class="cta-row" id="download">
+                            <a class="btn btn-primary" href="assets/PUKNO.dmg">
+                                <i class="fa-brands fa-apple"></i> Download for
+                                Mac OS (.dmg)
+                            </a>
+                            <a class="btn btn-ghost" href="#screenshots">
+                                <i class="fa-regular fa-images"></i> See
+                                screenshots
+                            </a>
+                        </div>
+
+                        <div class="meta-row">
+                            <div class="meta-item">
+                                <i class="fa-solid fa-shield-halved"></i> Data
+                                stays on your Mac 🖥️
+                            </div>
+
+                            <div class="meta-item">
+                                <i class="fa-solid fa-bolt"></i> Fast lookup and
+                                search
+                            </div>
+                            <div class="meta-item">
+                                <i class="fa-solid fa-microchip"></i> On-device
+                                AI Llm
+                            </div>
+                            <div class="meta-item">
+                                <i class="fa-solid fa-lock"></i> Private &
+                                Encrypted
+                            </div>
+                            <div class="meta-item">
+                                <i class="fa-solid fa-brain"></i> Context-aware
+                                memory
+                            </div>
+
+                            <div class="meta-item">
+                                <i class="fa-solid fa-palette"></i> Themeable UI
+                            </div>
+                        </div>
+
+                        <!--<div class="hero-note">
+                            <span class="muted">
+                                Download link points to
+                                <code>assets/PUKNO.dmg</code>.
+                            </span>
+                        </div>-->
+                    </div>
+
+                    <div class="hero-media">
+                        <div class="window-card">
+                            <div class="window-bar">
+                                <span class="dot red"></span
+                                ><span class="dot yellow"></span
+                                ><span class="dot green"></span>
+                                <span class="window-title"
+                                    >PUKNO – Activity</span
+                                >
+                            </div>
+
+                            <!-- IMPORTANT: path is relative; keep your file at assets/screenshots/pukno-activity.png -->
+                            <video
+                                class="hero-shot"
+                                src="assets/video/pukno-hero.mov"
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                            ></video>
+                            <!--<img
+                                class="hero-shot"
+                                src="assets/screenshots/pukno-activity-border.png"
+                                alt="PUKNO Activity screen"
+                                loading="eager"
+                            />-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- OVERVIEW -->
+            <section id="overview">
+                <h2>Remember What Matters</h2>
+                <section>
+                    <p>
+                        We give so much of our lives to our screens—thinking,
+                        searching, creating, learning—only to let it all slip
+                        away. Hours turn into forgotten tabs, lost ideas, and
+                        moments we can never retrieve. That quiet loss has felt
+                        normal for too long.
+                    </p>
+                    <p>Not anymore.</p>
+                    <p>
+                        PUKNO remembers what you can’t. It captures your digital
+                        life as it happens and turns it into a living memory,
+                        powered by a local LLM that belongs only to you. What
+                        once faded into noise becomes meaning. What was wasted
+                        becomes yours again. With PUKNO, your thoughts don’t
+                        disappear, your effort doesn’t vanish, and your digital
+                        life finally stays with you—always there, always within
+                        reach.
+                    </p>
+                    <p>
+                        PUKNO observes your workflow and builds a structured
+                        memory of your day — automatically. No manual
+                        note-taking, no context loss.
+                    </p>
+                    <p>
+                        Search by topic, app, or moment, then jump back to the
+                        exact context. PUKNO helps you move faster, stay
+                        focused, and keep continuity across everything you do.
+                    </p>
+                </section>
+
+                <div class="stats-row">
+                    <div class="stat">
+                        <div class="stat-k">Instant recall</div>
+                        <div class="stat-v">Search across activity</div>
+                        <div class="stat-s">Apps • files • sessions</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-k">Context-aware</div>
+                        <div class="stat-v">Not just keywords</div>
+                        <div class="stat-s">Meaning & timelines</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-k">Designed for macOS</div>
+                        <div class="stat-v">Native workflow</div>
+                        <div class="stat-s">Fast • private • clean</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCREENSHOTS -->
+            <section id="screenshots">
+                <div class="section-head">
+                    <h2>See PUKNO in action</h2>
+                    <p class="muted">
+                        Real Application Screenshots — activity capture,
+                        insights, filtering, about & themes.
+                    </p>
+                </div>
+
+                <div class="shots">
+                    <!-- Shot 1 -->
+                    <figure class="shot">
+                        <a class="shot-link" href="#shot-activity">
+                            <img
+                                src="assets/screenshots/pukno-activity-border.png"
+                                alt="PUKNO Overall Activity Stats dashboard"
+                                loading="lazy"
+                            />
+                        </a>
+                        <figcaption>
+                            Daily insights: events, active time, top apps &
+                            usage
+                        </figcaption>
+                    </figure>
+
+                    <!-- Shot 2 -->
+                    <figure class="shot">
+                        <a class="shot-link" href="#shot-timeline">
+                            <img
+                                src="assets/screenshots/pukno-timeline.png"
+                                alt="PUKNO Activity Timeline"
+                                loading="lazy"
+                            />
+                        </a>
+                        <figcaption>
+                            Timeline Activity feed with app context & searchable
+                            events
+                        </figcaption>
+                    </figure>
+
+                    <!-- Shot 3 -->
+                    <figure class="shot">
+                        <a class="shot-link" href="#shot-search">
+                            <img
+                                src="assets/screenshots/pukno-timeline-search.png"
+                                alt="PUKNO Activity Timeline and search"
+                                loading="lazy"
+                            />
+                        </a>
+                        <figcaption>
+                            Filter by kind, timeframe, AFK — and drill into
+                            sessions
+                        </figcaption>
+                    </figure>
+
+                    <!-- Shot 4 -->
+                    <figure class="shot">
+                        <a class="shot-link" href="#shot-about">
+                            <img
+                                src="assets/screenshots/pukno-about.png"
+                                alt="About PUKNO"
+                                loading="lazy"
+                            />
+                        </a>
+                        <figcaption>
+                            Product story & examples for natural-language recall
+                        </figcaption>
+                    </figure>
+
+                    <!-- Shot 5 -->
+                    <figure class="shot">
+                        <a class="shot-link" href="#shot-settings">
+                            <img
+                                src="assets/screenshots/pukno-settings.png"
+                                alt="PUKNO Settings themes"
+                                loading="lazy"
+                            />
+                        </a>
+                        <figcaption>
+                            Themes & customization — keep it yours
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- LIGHTBOXES (CSS-only, no JS) -->
+
+                <div class="lightbox" id="shot-activity">
+                    <a class="lightbox-bg" href="#screenshots"></a>
+                    <div class="lightbox-content">
+                        <a
+                            class="lightbox-close"
+                            href="#screenshots"
+                            aria-label="Close"
+                            >×</a
+                        >
+                        <img
+                            src="assets/screenshots/pukno-activity-border.png"
+                            alt="PUKNO Activity enlarged"
+                        />
+                    </div>
+                </div>
+
+                <div class="lightbox" id="shot-timeline">
+                    <a class="lightbox-bg" href="#screenshots"></a>
+                    <div class="lightbox-content">
+                        <a
+                            class="lightbox-close"
+                            href="#screenshots"
+                            aria-label="Close"
+                            >×</a
+                        >
+                        <img
+                            src="assets/screenshots/pukno-timeline.png"
+                            alt="PUKNO Timeline enlarged"
+                        />
+                    </div>
+                </div>
+
+                <div class="lightbox" id="shot-search">
+                    <a class="lightbox-bg" href="#screenshots"></a>
+                    <div class="lightbox-content">
+                        <a
+                            class="lightbox-close"
+                            href="#screenshots"
+                            aria-label="Close"
+                            >×</a
+                        >
+                        <img
+                            src="assets/screenshots/pukno-timeline-search.png"
+                            alt="PUKNO Timeline Search enlarged"
+                        />
+                    </div>
+                </div>
+
+                <div class="lightbox" id="shot-about">
+                    <a class="lightbox-bg" href="#screenshots"></a>
+                    <div class="lightbox-content">
+                        <a
+                            class="lightbox-close"
+                            href="#screenshots"
+                            aria-label="Close"
+                            >×</a
+                        >
+                        <img
+                            src="assets/screenshots/pukno-about.png"
+                            alt="About PUKNO enlarged"
+                        />
+                    </div>
+                </div>
+
+                <div class="lightbox" id="shot-settings">
+                    <a class="lightbox-bg" href="#screenshots"></a>
+                    <div class="lightbox-content">
+                        <a
+                            class="lightbox-close"
+                            href="#screenshots"
+                            aria-label="Close"
+                            >×</a
+                        >
+                        <img
+                            src="assets/screenshots/pukno-settings.png"
+                            alt="PUKNO Settings enlarged"
+                        />
+                    </div>
+                </div>
+
+                <div class="center">
+                    <a class="btn btn-primary" href="assets/PUKNO.dmg">
+                        <i class="fa-brands fa-apple"></i> Download PUKNO for
+                        macOS (.dmg)
+                    </a>
+                </div>
+            </section>
+
+            <!-- FEATURES -->
+            <section id="features">
+                <h2>Your Second Mind at Work</h2>
+                <p>
+                    PUKNO is your second mind. It preserves your digital life as
+                    it unfolds, turning forgotten moments into lasting
+                    knowledge—securely, privately, and always within reach.
+                </p>
+
+                <div class="features-list">
+                    <div class="feature-item">
+                        <h3>
+                            <i class="fa-solid fa-comments"></i> Chat with Your
+                            AI
+                        </h3>
+                        <p>
+                            Ask questions, explore ideas, and recall moments
+                            using a private, on-device LLM grounded in your own
+                            activity.
+                        </p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Contextual Search
+                        </h3>
+                        <p>
+                            Search across apps, titles, and sessions. Find by
+                            topic, tool, or intent — not just filenames.
+                        </p>
+                    </div>
+
+                    <div class="feature-item">
+                        <h3>
+                            <i class="fa-regular fa-clock"></i> Activity
+                            Timeline
+                        </h3>
+                        <p>
+                            A clear stream of what happened, when — with filters
+                            for apps, activity types, and time ranges.
+                        </p>
+                    </div>
+
+                    <!--<div class="feature-item">
+                        <h3>
+                            <i class="fa-solid fa-camera"></i> Context Snapshots
+                        </h3>
+                        <p>
+                            Automatically capture the state of your work — open
+                            apps, documents, and focus — so moments can be
+                            revisited exactly as they were.
+                        </p>
+                    </div>-->
+
+                    <div class="feature-item">
+                        <h3>
+                            <i class="fa-solid fa-chart-line"></i> Personal
+                            Analytics
+                        </h3>
+                        <p>
+                            See usage patterns, active time, and top
+                            applications to understand how you actually work
+                            over time.
+                        </p>
+                    </div>
+
+                    <!--<div class="feature-item">
+                        <h3>
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            Themes & Focus
+                        </h3>
+                        <p>
+                            A clean, distraction-free UI with switchable themes
+                            designed to stay out of your way.
+                        </p>
+                    </div>-->
+                </div>
+            </section>
+
+            <!-- PRIVACY -->
+            <section id="privacy">
+                <h2>Private and Secure</h2>
+                <p>
+                    Your digital memory is deeply personal. PUKNO is built to
+                    keep your data private, encrypted, and fully under your
+                    control.
+                </p>
+
+                <div class="privacy-grid">
+                    <div class="privacy-card">
+                        <div class="privacy-icon">
+                            <i class="fa-solid fa-hard-drive"></i>
+                        </div>
+                        <h3>Local Storage and AI</h3>
+                        <p>
+                            Runs entirely on your Computer, so your activity
+                            never leaves your machine.
+                        </p>
+                    </div>
+
+                    <div class="privacy-card">
+                        <div class="privacy-icon">
+                            <i class="fa-solid fa-eye-slash"></i>
+                        </div>
+                        <h3>No tracking</h3>
+                        <p>
+                            No third-party trackers, no analytics beacons — just
+                            the product doing its job.
+                        </p>
+                    </div>
+
+                    <div class="privacy-card">
+                        <div class="privacy-icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <h3>Encrypted by default</h3>
+                        <p>
+                            Your memory is protected with strong encryption at
+                            rest, so only you can access it.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="callout">
+                    <div class="callout-title">
+                        <i class="fa-solid fa-shield"></i> Your memory should be
+                        private.
+                    </div>
+                    <div class="callout-body">
+                        Your thoughts, habits, and moments belong to you —
+                        Memory is deeply personal. It reflects how you think,
+                        work, and grow — and it should never belong to anyone
+                        else.
+                        <p>PUKNO is built on a simple promise:</p>
+                        <b class="callout-title">Your memory, your data!</b>
+
+                        Everything stays on your machine, protected by strong
+                        encryption, so you can capture and recall your life
+                        without turning your thoughts, habits, or moments into
+                        someone else’s data.
+                        <p>
+                            Privacy and encryption aren’t optional — they’re the
+                            foundation that keeps your digital memory truly
+                            yours.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <!-- FAQ (drop-in replacement: pure HTML/CSS accordion, no JS) -->
+            <section id="faq">
+                <h2>FAQ</h2>
+
+                <div class="faq-accordion">
+                    <!-- Item 1 -->
+                    <div class="faq-row">
+                        <input
+                            type="radio"
+                            name="faq"
+                            id="faq-1"
+                            class="faq-toggle"
+                            checked
+                        />
+                        <label class="faq-q" for="faq-1">
+                            <span>Is my data secure?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </label>
+                        <div class="faq-a">
+                            <p>
+                                Yes — PUKNO is built with a privacy-first
+                                mindset and is designed to keep your memory on
+                                your machine. That means your activity and
+                                recall data stays under your control, without
+                                relying on third-party trackers or sending your
+                                history to external services. Everything runs
+                                locally.
+                            </p>
+                            <p>
+                                The goal is simple: give you powerful, fast
+                                recall while treating your personal memory as
+                                something that should remain private and
+                                user-owned.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="faq-row">
+                        <input
+                            type="radio"
+                            name="faq"
+                            id="faq-2"
+                            class="faq-toggle"
+                        />
+                        <label class="faq-q" for="faq-2">
+                            <span>Does PUKNO work offline?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </label>
+                        <div class="faq-a">
+                            <p>
+                                Yes. PUKNO is designed to run locally on your
+                                Mac, so core functionality works without an
+                                internet connection. Your activity timeline,
+                                session views, and recall flows remain available
+                                always and all the time.
+                            </p>
+                            <p>
+                                Offline-first also means speed: local processing
+                                reduces latency and keeps the experience snappy.
+                                In the future we may introduce encrypted sync
+                                remote storage so that you can access and use it
+                                on your mobile, the keys always stay with you.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="faq-row">
+                        <input
+                            type="radio"
+                            name="faq"
+                            id="faq-3"
+                            class="faq-toggle"
+                        />
+                        <label class="faq-q" for="faq-3">
+                            <span>What can PUKNO remember?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </label>
+                        <div class="faq-a">
+                            <p>
+                                PUKNO focuses on your digital workflow: app
+                                activity context, window titles, and work
+                                sessions across the tools you use — so you can
+                                reconstruct “what I was doing” in a way that
+                                feels natural. Your day becomes a structured
+                                timeline you can search and revisit.
+                            </p>
+                            <p>
+                                This is especially useful for deep work and
+                                context switching: you can jump back to a
+                                thread, a session, or a time period and quickly
+                                reconnect the dots. Over time, the intent is to
+                                improve how your history is organized so recall
+                                becomes more precise and more helpful using a
+                                locall LLM.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="faq-row">
+                        <input
+                            type="radio"
+                            name="faq"
+                            id="faq-4"
+                            class="faq-toggle"
+                        />
+                        <label class="faq-q" for="faq-4">
+                            <span>What platforms are supported?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </label>
+                        <div class="faq-a">
+                            <p>
+                                Today, PUKNO is available as a Mac OS app built
+                                for Apple Silicon. The long-term architecture is
+                                designed to be cross-platform: the core is
+                                written in
+                                <strong>Rust Programmin Language</strong>, which
+                                makes it portable and suitable for Windows and
+                                Linux builds as the product matures.
+                            </p>
+
+                            <p class="platforms">
+                                <span class="platform">
+                                    <i class="fa-brands fa-apple"></i>
+                                    Mac OS (Apple Silicon) — available now
+                                </span>
+                                <span class="platform muted">
+                                    <i class="fa-brands fa-windows"></i>
+                                    Windows — coming soon
+                                </span>
+                                <span class="platform muted">
+                                    <i class="fa-brands fa-linux"></i>
+                                    Linux — coming soon
+                                </span>
+                            </p>
+
+                            <p>
+                                The goal is to keep the experience consistent
+                                across platforms while still feeling native on
+                                each OS — starting with Mac OS first, then
+                                expanding once the foundations are rock-solid.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <a class="btn btn-primary" href="assets/PUKNO.dmg">
+                        <i class="fa-brands fa-apple"></i> Download for Mac OS
+                        (.dmg)
+                    </a>
+                </div>
+            </section>
+
+            <!-- ABOUT -->
+            <section id="about">
+                <h2>About PUKNO</h2>
+                <p>
+                    PUKNO stands for
+                    <strong>Personalized Universal KNOwledge</strong> — a system
+                    designed to store and retrieve your life's informational
+                    footprint. It acts as your second cognitive layer, helping
+                    you remember what matters across all contexts of your life.
+                </p>
+                <p>
+                    Whether it’s professional work, deep research, or daily
+                    tasks, PUKNO keeps a timeline of your digital world and
+                    makes it easy to recall:
+                    <em>what happened, when, and why it mattered</em>.
+                </p>
+            </section>
+
+            <section class="final-cta">
+                <div class="final-cta-inner">
+                    <h2>Ready to remember better?</h2>
+                    <p class="muted">
+                        Download PUKNO for macOS and start building your
+                        personal AI memory.
+                    </p>
+                    <div class="cta-row center">
+                        <a class="btn btn-primary" href="assets/PUKNO.dmg">
+                            <i class="fa-brands fa-apple"></i> Download (.dmg)
+                        </a>
+                        <a class="btn btn-ghost" href="#top">
+                            <i class="fa-solid fa-arrow-up"></i> Back to top
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>&copy; 2026 PUKNO. All rights reserved.</footer>
+    </body>
+</html>
