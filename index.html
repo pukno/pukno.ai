@@ -12,6 +12,7 @@
             referrerpolicy="no-referrer"
         />
         <link rel="stylesheet" href="css/main.css" />
+
         <script>
             !(function (t, e) {
                 var o, n, p, r;
@@ -96,7 +97,7 @@
                 <a href="#features">Features</a>
                 <a href="#privacy">Privacy</a>
                 <a href="#faq">FAQ</a>
-                <a class="nav-cta" href="#download">Coming Soon</a>
+                <a class="nav-cta" href="#notify">Notify me!</a>
             </nav>
         </header>
 
@@ -134,9 +135,8 @@
                         </p>
 
                         <div class="cta-row" id="download">
-                            <a class="btn btn-primary" href="assets/PUKNO.dmg">
+                            <a class="btn btn-primary" href="#notify">
                                 <i class="fa-brands fa-apple"></i> Download
-                                (Coming Soon)
                             </a>
                             <a class="btn btn-ghost" href="#screenshots">
                                 <i class="fa-regular fa-images"></i> See
@@ -206,6 +206,51 @@
                                 alt="PUKNO Activity screen"
                                 loading="eager"
                             />-->
+                        </div>
+                        <div class="notify-inline" id="notify">
+                            <iframe
+                                data-tally-src="https://tally.so/embed/vGekoA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                                loading="lazy"
+                                width="100%"
+                                height="146"
+                                frameborder="0"
+                                marginheight="0"
+                                marginwidth="0"
+                                title="pukno.ai"
+                            ></iframe>
+                            <script>
+                                var d = document,
+                                    w = "https://tally.so/widgets/embed.js",
+                                    v = function () {
+                                        "undefined" != typeof Tally
+                                            ? Tally.loadEmbeds()
+                                            : d
+                                                  .querySelectorAll(
+                                                      "iframe[data-tally-src]:not([src])",
+                                                  )
+                                                  .forEach(function (e) {
+                                                      e.src =
+                                                          e.dataset.tallySrc;
+                                                  });
+                                    };
+                                if ("undefined" != typeof Tally) v();
+                                else if (
+                                    d.querySelector(
+                                        'script[src="' + w + '"]',
+                                    ) == null
+                                ) {
+                                    var s = d.createElement("script");
+                                    ((s.src = w),
+                                        (s.onload = v),
+                                        (s.onerror = v),
+                                        d.body.appendChild(s));
+                                }
+                            </script>
+
+                            <p class="muted small">
+                                Be the first to try PUKNO when the first version
+                                is available for download.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -432,9 +477,8 @@
                 </div>
 
                 <div class="center">
-                    <a class="btn btn-primary" href="assets/PUKNO.dmg">
-                        <i class="fa-brands fa-apple"></i> Download PUKNO
-                        (Coming Soon)
+                    <a class="btn btn-primary" href="#notify">
+                        <i class="fa-brands fa-apple"></i> Notify me!
                     </a>
                 </div>
             </section>
@@ -738,9 +782,8 @@
                 </div>
 
                 <div class="center">
-                    <a class="btn btn-primary" href="assets/PUKNO.dmg">
-                        <i class="fa-brands fa-apple"></i> Download (Coming
-                        Soon)
+                    <a class="btn btn-primary" href="#notify">
+                        <i class="fa-brands fa-apple"></i> Notify me
                     </a>
                 </div>
             </section>
@@ -771,9 +814,8 @@
                         personal AI memory.
                     </p>
                     <div class="cta-row center">
-                        <a class="btn btn-primary" href="assets/PUKNO.dmg">
-                            <i class="fa-brands fa-apple"></i> Download (Coming
-                            Soon)
+                        <a class="btn btn-primary" href="#notify">
+                            <i class="fa-brands fa-apple"></i> Download
                         </a>
                         <a class="btn btn-ghost" href="#top">
                             <i class="fa-solid fa-arrow-up"></i> Back to top

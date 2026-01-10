@@ -43,6 +43,16 @@
     }
 }
 
+.notify-inline:target {
+    outline: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 10px;
+    scroll-margin-top: 90px; /* offset for sticky header */
+}
+#notify {
+    scroll-margin-top: 90px;
+}
 /* FAQ accordion (no JS) */
 .faq-accordion {
     display: grid;
@@ -522,7 +532,7 @@ code {
 }
 
 .hero-media .window-card {
-    height: 420px;
+    height: 320px;
 }
 .hero-media .hero-shot {
     width: 100%;
