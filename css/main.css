@@ -43,15 +43,92 @@
     }
 }
 
-.notify-inline:target {
-    outline: 2px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
-    padding: 10px;
-    scroll-margin-top: 90px; /* offset for sticky header */
+/* ===== Notify Modal (CSS-only via :target) ===== */
+
+.notify-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 9999;
 }
-#notify {
-    scroll-margin-top: 90px;
+
+.notify-modal:target {
+    display: block;
+}
+
+.notify-modal-bg {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+}
+
+/* Modal box */
+.notify-modal-content {
+    position: relative;
+    width: min(720px, 92vw);
+    margin: 10vh auto 0;
+    background: rgba(15, 15, 15, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 30px 100px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+/* Header area inside modal */
+.notify-modal-head {
+    padding: 16px 16px 10px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.notify-modal-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--accent);
+}
+
+.notify-modal-sub {
+    margin: 8px 0 0 0;
+    color: var(--muted-2);
+    font-size: 0.98rem;
+    line-height: 1.5;
+}
+
+/* Body area for iframe */
+.notify-modal-body {
+    padding: 12px 16px 16px 16px;
+}
+
+.notify-modal-body iframe {
+    display: block;
+    width: 100%;
+    height: 170px; /* adjust to your form */
+    border: 0;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Close button */
+.notify-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.notify-modal-close:hover {
+    border-color: rgba(0, 255, 225, 0.35);
+    color: #00ffe1;
 }
 
 .gt-quote {
@@ -66,19 +143,20 @@
     font-weight: 700;
     line-height: 1;
 }
+/*
 .notify-inline {
     padding: 8px 10px;
     margin-top: 15px;
     border-radius: 14px;
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    overflow: hidden; /* clips extra whitespace */
+    overflow: hidden;
 }
 .notify-inline iframe {
     display: block;
     width: 100%;
-    height: 50px; /* tune: 96–120 depending on your form */
-}
+    height: 50px;
+}*/
 /* FAQ accordion (no JS) */
 .faq-accordion {
     display: grid;
@@ -558,7 +636,7 @@ code {
 }
 
 .hero-media .window-card {
-    height: 320px;
+    height: 450px;
 }
 .hero-media .hero-shot {
     width: 100%;
@@ -834,6 +912,13 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .notify-modal-content {
+        margin: 6vh auto 0;
+        width: min(92vw, 720px);
+    }
+    .notify-modal-body iframe {
+        height: 210px; /* mobile usually needs more height */
+    }
     .content-wrapper {
         padding: 0 16px;
     }
