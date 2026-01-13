@@ -133,16 +133,24 @@
                             watched, or discussed.
                         </p>
 
+
+
+
                         <div class="cta-row" id="download">
                             <a class="btn btn-primary" href="#notify">
                                 <i class="fa-brands fa-apple"></i> Get Early Access
                             </a>
-                            <a class="btn btn-ghost" href="#screenshots">
+                            <!--<a class="btn btn-ghost" href="#screenshots">
                                 <i class="fa-regular fa-images"></i> See
                                 screenshots
-                            </a>
+                            </a>-->
                         </div>
+                        <p class="muted small">
+                            <!--Be the first to try PUKNO when the first version is available for download.-->
 
+                            <span class="big">👆</span><b>&nbsp;Get early access</b>.
+                            Enter your email above to be notified when the first version launches.
+                        </p>
                         <div class="meta-row">
                             <div class="meta-item">
                                 <i class="fa-solid fa-microchip"></i> On-device
@@ -170,12 +178,6 @@
                                 <i class="fa-solid fa-palette"></i> Themeable UI
                             </div>-->
                         </div>
-                        <p class="muted small">
-                            <!--Be the first to try PUKNO when the first version is available for download.-->
-                            <b>Get early access</b> <i>Register</i>
-                            to be notified to download the first version by
-                            entering your email on the form here &nbsp;<span class="big"> 👉</span>
-                        </p>
 
                         <!--<div class="hero-note">
                             <span class="muted">
@@ -212,45 +214,59 @@
                                 loading="eager"
                             />-->
                         </div>
-                        <div class="notify-inline" id="notify">
-                            <iframe
-                                data-tally-src="https://tally.so/embed/vGekoA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-                                loading="lazy"
-                                width="100%"
-                                height="50"
-                                frameborder="0"
-                                marginheight="0"
-                                marginwidth="0"
-                                title="pukno.ai"
-                            ></iframe>
-                            <script>
-                                var d = document,
-                                    w = "https://tally.so/widgets/embed.js",
-                                    v = function () {
-                                        "undefined" != typeof Tally
-                                            ? Tally.loadEmbeds()
-                                            : d
-                                                  .querySelectorAll(
-                                                      "iframe[data-tally-src]:not([src])",
-                                                  )
-                                                  .forEach(function (e) {
-                                                      e.src =
-                                                          e.dataset.tallySrc;
-                                                  });
-                                    };
-                                if ("undefined" != typeof Tally) v();
-                                else if (
-                                    d.querySelector(
-                                        'script[src="' + w + '"]',
-                                    ) == null
-                                ) {
-                                    var s = d.createElement("script");
-                                    ((s.src = w),
-                                        (s.onload = v),
-                                        (s.onerror = v),
-                                        d.body.appendChild(s));
-                                }
-                            </script>
+                        <!-- Notify Modal (place near the end of body) -->
+                        <div id="notify" class="notify-modal" aria-hidden="true">
+                          <a href="#!" class="notify-modal-bg" aria-label="Close"></a>
+
+                          <div class="notify-modal-content" role="dialog" aria-modal="true" aria-labelledby="notifyTitle">
+                            <a class="notify-modal-close" href="#!" aria-label="Close">✕</a>
+
+                            <div class="notify-modal-head">
+                              <h3 id="notifyTitle" class="notify-modal-title">Get notified</h3>
+                              <p class="notify-modal-sub">Drop your email and I’ll ping you when it’s ready.</p>
+                            </div>
+
+                            <div class="notify-modal-body">
+                                <iframe
+                                    data-tally-src="https://tally.so/embed/vGekoA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                                    loading="lazy"
+                                    width="100%"
+                                    height="50"
+                                    frameborder="0"
+                                    marginheight="0"
+                                    marginwidth="0"
+                                    title="pukno.ai"
+                                ></iframe>
+                                <script>
+                                    var d = document,
+                                        w = "https://tally.so/widgets/embed.js",
+                                        v = function () {
+                                            "undefined" != typeof Tally
+                                                ? Tally.loadEmbeds()
+                                                : d
+                                                      .querySelectorAll(
+                                                          "iframe[data-tally-src]:not([src])",
+                                                      )
+                                                      .forEach(function (e) {
+                                                          e.src =
+                                                              e.dataset.tallySrc;
+                                                      });
+                                        };
+                                    if ("undefined" != typeof Tally) v();
+                                    else if (
+                                        d.querySelector(
+                                            'script[src="' + w + '"]',
+                                        ) == null
+                                    ) {
+                                        var s = d.createElement("script");
+                                        ((s.src = w),
+                                            (s.onload = v),
+                                            (s.onerror = v),
+                                            d.body.appendChild(s));
+                                    }
+                                </script>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
