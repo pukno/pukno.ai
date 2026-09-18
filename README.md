@@ -4,25 +4,26 @@ Welcome to the official landing page for **PUKNO**, your AI-powered memory assis
 
 ## 🌐 Live Preview
 
-> [Coming Soon](https://pukno.com)
+> [pukno.ai](https://pukno.ai)
 
 ---
 
 ## 📁 Project Structure
 
 ```
-pukno-landing/
-├── public/                  # Static public assets (favicons, etc.)
-│   └── favicon.ico
-├── assets/                  # Brand images, logos, illustrations
-│   └── logo.png
-├── css/                     # Styles
-│   └── main.css
-├── js/                      # Optional JavaScript scripts
-│   └── main.js
-├── index.html               # Main landing page HTML
-├── README.md                # Project documentation
-└── LICENSE                  # Licensing (Not YET)
+pukno.ai/
+├── assets/
+│   ├── audio/
+│   │   └── song-preview.mp3
+│   ├── screenshots/
+│   │   ├── pukno-activity-border.png
+│   │   ├── pukno-timeline-search.png
+│   │   └── pukno-timeline.png
+│   ├── video/
+│   │   └── pukno-hero.MOV
+│   └── pukno-logo.png
+├── index.html
+└── README.md
 ```
 
 ---
