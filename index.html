@@ -2067,6 +2067,24 @@
             margin-top: 64px
         }
 
+        .product-memory { margin-top: 64px; }
+        .product-memory .compute {
+            text-align: left;
+            background: #0b1010;
+            color: var(--white);
+            border-color: var(--line);
+        }
+        .product-memory .compute p { color: var(--grey); }
+        .memory-shots { margin-top: 24px; align-items: start; }
+        .memory-extra { border-top: 1px solid var(--line); }
+        .memory-extra summary {
+            padding: 18px 26px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .memory-extra summary:focus-visible { outline: 2px solid var(--cyan); outline-offset: -5px; }
+
         .shot {
             border-radius: 28px;
             background: #020303;
@@ -4537,16 +4555,15 @@
                 <div class="today-hero">
                     <div class="today-copy">
                         <div class="eyebrow cyan reveal">PUKNO today</div>
-                        <h2 class="display reveal">A private timeline of<br><span class="gradient">your digital
-                                activity.</span></h2>
+                        <h2 class="display reveal">Your digital activity.<br><span class="gradient">Connected to memory.</span></h2>
                         <p class="lead reveal">Your day moves between apps, websites, documents and music. PUKNO
-                            brings that activity into a private, searchable timeline on your Mac — so you can revisit
-                            what you were doing, find the right moment and see its context again.</p>
+                            brings that activity into a private timeline on your Mac, with memory search and chat
+                            that help you find what you remember and return to its context.</p>
                         <div class="today-highlight reveal">
                             <h3>From the overview to the moment.</h3>
                             <p>Start with your activity dashboard, explore your day, narrow the search and open a
-                                captured moment in Quick Look. A dedicated chat workspace brings local AI alongside
-                                your activity history.</p>
+                                captured moment in Quick Look. Search your captured screens by topic, or ask chat
+                                to retrieve a moment from your activity history.</p>
                         </div>
                     </div>
 
@@ -4564,6 +4581,63 @@
                                 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                                 allowfullscreen></iframe>
                         </div>
+                    </div>
+                </div>
+
+                <div class="product-memory" aria-labelledby="product-memory-title">
+                    <div class="compute reveal">
+                        <div class="future-icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></div>
+                        <div>
+                            <small><b>PUKNO Memory · Available now</b></small>
+                            <h3 id="product-memory-title">Your history, connected to your conversations.</h3>
+                            <p>PUKNO Memory connects your captured activity to search and chat. Search by topic or
+                                describe what you remember, then ask PUKNO to retrieve the relevant moments and their
+                                context — even when you only remember part of them.</p>
+                        </div>
+                    </div>
+                    <div class="shots memory-shots">
+                        <article class="shot reveal">
+                            <div class="shot-media"><img src="assets/screenshots/darkmode/pukno-search.png"
+                                    data-dark-src="assets/screenshots/darkmode/pukno-search.png"
+                                    data-light-src="assets/screenshots/lightmode/pukno-search-trump-1.png"
+                                    alt="PUKNO Search showing captured screenshots ranked by similarity to a topic"
+                                    loading="lazy" decoding="async"></div>
+                            <div class="shot-copy">
+                                <h3>Search what you remember.</h3>
+                                <p>Find captured screens by topic, with ranked results and previews that help you
+                                    recognize the right moment. Refine your description to narrow the search.</p>
+                            </div>
+                            <details class="memory-extra">
+                                <summary>See a more specific search</summary>
+                                <!-- Dark-mode placeholder: replace data-dark-src when its screenshot is available. -->
+                                <div class="shot-media"><img src="assets/screenshots/lightmode/pukno-search-trump-2.png"
+                                        data-dark-src="assets/screenshots/lightmode/pukno-search-trump-2.png"
+                                        data-light-src="assets/screenshots/lightmode/pukno-search-trump-2.png"
+                                        alt="PUKNO screenshot search refined from a person's name to a description of them with their family"
+                                        loading="lazy" decoding="async"></div>
+                            </details>
+                        </article>
+                        <article class="shot reveal">
+                            <div class="shot-media"><img src="assets/screenshots/darkmode/pukno-chat-interface-youtube.png"
+                                    data-dark-src="assets/screenshots/darkmode/pukno-chat-interface-youtube.png"
+                                    data-light-src="assets/screenshots/lightmode/pukno-chat-interface-youtube.png"
+                                    alt="PUKNO chat retrieving previously watched YouTube videos about Rust programming, with source cards"
+                                    loading="lazy" decoding="async"></div>
+                            <div class="shot-copy">
+                                <h3>Ask your memory.</h3>
+                                <p>Ask which videos you watched about a topic. PUKNO retrieves matching activity in
+                                    chat, with source cards that bring the answer back to its context.</p>
+                            </div>
+                            <details class="memory-extra">
+                                <summary>See a recalled viewing session</summary>
+                                <!-- Dark-mode placeholder: replace data-dark-src when its screenshot is available. -->
+                                <div class="shot-media"><img src="assets/screenshots/lightmode/pukno-chat-interface-youtube-2.png"
+                                        data-dark-src="assets/screenshots/lightmode/pukno-chat-interface-youtube-2.png"
+                                        data-light-src="assets/screenshots/lightmode/pukno-chat-interface-youtube-2.png"
+                                        alt="PUKNO chat recalling a YouTube viewing session about phones, with event details, content context and cited sources"
+                                        loading="lazy" decoding="async"></div>
+                            </details>
+                        </article>
                     </div>
                 </div>
 
@@ -4635,17 +4709,17 @@
                                 alt="PUKNO local AI chat workspace with model selection and conversation history"
                                 loading="lazy" decoding="async"></div>
                         <div class="shot-copy">
-                            <h3>Make room for a conversation.</h3>
-                            <p>Choose a local model, start a conversation and return to previous chats in a dedicated AI
-                                workspace. Connected semantic memory is the next step.</p>
+                            <h3>A conversation with context.</h3>
+                            <p>Choose a local model and ask about your captured activity. Integrated memory brings
+                                relevant moments into chat, alongside your conversation history.</p>
                         </div>
                     </article>
                 </div>
 
                 <div class="current-features reveal" aria-label="Current PUKNO features">
                     <div class="current-feature">Local activity history</div>
-                    <div class="current-feature">Searchable timeline</div>
-                    <div class="current-feature">App and session filters</div>
+                    <div class="current-feature">Semantic memory search</div>
+                    <div class="current-feature">Memory in local AI chat</div>
                     <div class="current-feature">Designed for macOS</div>
                 </div>
 
@@ -4677,23 +4751,6 @@
                     </div>
                 </div>
                 <div class="future-features">
-                    <div class="compute reveal">
-                        <div class="future-icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></div>
-                        <div><small><b>PUKNO Memory</b></small>
-                            <h3>Your history today. Connected memories tomorrow.</h3>
-                            <p><b>PUKNO</b> already creates a private history of what you were doing and when. We’re
-                                building toward semantic memory
-                                that connects related activity, understands its meaning and <b>PUKNO</b>’s
-                                conversational AI helps you retrieve moments
-                                even when you only remember part of them. </p>
-                            <!--For example, you could ask, “What was the hotel near the restaurant Alex recommended before my island trip?”
-                        and PUKNO’s conversational AI could reason across your browsing activity, messages and travel memories to find it.-->
-
-                            <!--<p>Today, PUKNO privately captures and organizes your Mac activity — including apps, sessions, timestamps and supported web activity. Future PUKNO Memory will build on that foundation by understanding the people, places, projects and moments behind what you do.</p>
-                        <p>PUKNO currently organizes activity from your Mac into a private, searchable history. Future PUKNO Memory will transform that activity into connected context about the topics, people, places, projects and moments that make up your digital life.</p>
-                        <p>Today, PUKNO captures which apps and websites you used, along with their context and timing. The next step is semantic memory: understanding how that activity connects, so you could recover something like a hotel you viewed months ago without knowing the website, date or filename.</p>-->
-                        </div>
-                    </div>
                     <div class="compute reveal">
                         <div class="future-icon" aria-hidden="true"><i class="fa-solid fa-arrows-rotate"></i></div>
                         <div><small> <b>PUKNO Sync</b> - FUTURE</small>
@@ -5010,37 +5067,19 @@
                                     you use, application
                                     and window context, sessions, timestamps and supported web activity. This creates a
                                     private activity
-                                    history of what you were doing and when, forming the foundation that PUKNO Memory
-                                    will build on.
+                                    history of what you were doing and when, which PUKNO Memory uses for search and chat.
                                 </p>
 
                                 <p>
-                                    This activity layer is the foundation for everything that comes next. Instead of
-                                    starting with an empty
-                                    AI conversation, PUKNO begins building a history of the activity and context that
-                                    make up your digital life.
+                                    <strong>PUKNO Memory</strong><br>
+                                    Memory is integrated into search and chat. Search captured screenshots by topic,
+                                    ask about activity you remember, and retrieve relevant moments with their context
+                                    and source cards — including videos you watched.
                                 </p>
                             </div>
 
                             <div class="faq-roadmap-future">
                                 <h4>What we're building toward</h4>
-
-                                <p>
-                                    <strong>PUKNO Memory</strong><br>
-                                    PUKNO Memory will transform captured activity into meaningful, connected personal
-                                    context. Instead of only knowing
-                                    that you opened an app or visited a website, PUKNO will work to understand what you
-                                    were doing — the topics,
-                                    people, places, projects, media and moments involved.
-                                </p>
-
-                                <p>
-                                    Over time, related activity can become connected memories that PUKNO can retrieve,
-                                    reconstruct and reason over.
-                                    This means you could ask questions based on partial memories such as “What was that
-                                    hotel I looked at
-                                    a few months ago?” without remembering the exact website, date or filename.
-                                </p>
 
                                 <p>
                                     <strong>PUKNO Sync</strong><br>
