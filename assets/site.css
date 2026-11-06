@@ -623,17 +623,14 @@ img {
     z-index: 2
 }
 
-/* Shared hardware palette; light mode lifts the bezel for visual consistency. */
+/* The product preview keeps its dark hardware palette in both page themes. */
 .mac {
     --bezel-background: linear-gradient(145deg, #343a3a, #101313);
     --bezel-border: #454b4b;
     --screen-background: #080b0b;
 }
 
-[data-theme="light"] .mac {
-    --bezel-background: linear-gradient(145deg, #bcc5c5, #bcc5c5);
-    --bezel-border: #acafaf;
-}
+
 
 .screen-shell {
     padding: 12px;
@@ -3817,17 +3814,7 @@ footer {
     box-shadow: 0 24px 60px rgba(29, 29, 31, .16), 0 4px 12px rgba(29, 29, 31, .06);
 }
 
-/* Match the light captures' app window independently of the bezel palette. */
-[data-theme="light"] .screen-viewport:has(.hero-slide--fill:not([hidden])) {
-    aspect-ratio: 2784/1954;
-}
 
-[data-theme="light"] .hero-slide--fill>img {
-    left: calc(-100% * 112 / 2784);
-    top: calc(-100% * 76 / 1954);
-    width: calc(100% * 3008 / 2784);
-    height: calc(100% * 2178 / 1954);
-}
 
 @media(max-width:700px) {
     .navin {
@@ -4058,11 +4045,19 @@ body { color: var(--mono-ink); font-family: -apple-system, BlinkMacSystemFont, "
     .hero--split .lead { font-size: clamp(19px, 1.7vw, 23px); }
 }
 /* Product screenshots remain the original local assets; only their framing changes. */
-.mac-stage, .screen-shell, .screen-viewport, .today-window, .shot-media {
+.today-window, .shot-media {
     box-shadow: var(--shadow);
+    border-color: var(--mono-border);
 }
-.screen-shell, .screen-viewport, .today-window, .shot-media,
-[data-theme="light"] .screen-shell { border-color: var(--mono-border); }
+/* Frame the laptop, not the controls and caption beneath it. */
+.mac-stage, .hero-slider-controls {
+    background: transparent;
+    box-shadow: none;
+}
+.screen-shell, [data-theme="light"] .screen-shell {
+    border-color: var(--bezel-border);
+    box-shadow: 0 45px 110px rgba(0, 0, 0, .5);
+}
 .hero-slider-controls button, [data-theme="light"] .hero-slider-controls button {
     border-color: var(--mono-border); background: var(--mono-card); color: var(--mono-ink);
 }
