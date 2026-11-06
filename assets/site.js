@@ -6,7 +6,7 @@ const applyTheme = theme => {
     const label = theme === 'light' ? ui.dark : ui.light;
     themeToggle.setAttribute('aria-label', label);
     themeToggle.title = label;
-    document.querySelector('meta[name="theme-color"]').content = theme === 'light' ? '#f2f2f4' : '#000000';
+    document.querySelector('meta[name="theme-color"]').content = theme === 'light' ? '#ffffff' : '#090909';
     document.querySelectorAll('img[data-light-src]').forEach(img => {
         img.src = theme === 'light' ? img.dataset.lightSrc : img.dataset.darkSrc;
     });
