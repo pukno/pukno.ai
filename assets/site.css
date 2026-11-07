@@ -2068,6 +2068,89 @@ img {
     height: auto
 }
 
+.screenshot-zoom {
+    display: block;
+    position: relative;
+    cursor: zoom-in;
+    scroll-margin-top: 100px
+}
+
+.screenshot-zoom-hint {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    font-size: 12px;
+    pointer-events: none
+}
+
+.screenshot-zoom:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: -4px
+}
+
+/* Keep overlays outside the transformed reveal cards so they fill the viewport. */
+.screenshot-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    padding: 64px 16px 16px;
+    align-items: center;
+    justify-content: center
+}
+
+.screenshot-lightbox:target {
+    display: flex
+}
+
+body:has(.screenshot-lightbox:target) {
+    overflow: hidden
+}
+
+.screenshot-lightbox-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .92);
+    cursor: zoom-out
+}
+
+.screenshot-lightbox > img {
+    position: relative;
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: calc(100vh - 80px);
+    max-height: calc(100dvh - 80px);
+    object-fit: contain;
+    border-radius: 12px
+}
+
+.screenshot-lightbox-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    background: #111;
+    color: #fff
+}
+
+.screenshot-lightbox-close:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px
+}
+
 .shot-copy {
     padding: 26px
 }
