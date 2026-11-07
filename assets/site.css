@@ -514,7 +514,7 @@ img {
 
 /* Match the app window, excluding the black padding in these five screenshots. */
 .screen-viewport:has(.hero-slide--fill:not([hidden])) {
-    aspect-ratio: 2904/1948
+    aspect-ratio: 2800/1960
 }
 
 .hero-slide--fill {
@@ -522,12 +522,12 @@ img {
 }
 
 .hero-slide--fill>img {
-    /* Original image: 3128 × 2172. App window begins at (112, 76). */
+    /* Image: 3024 × 2184. App window: 2800 × 1960 at (112, 76). */
     position: absolute;
-    left: calc(-100% * 112 / 2904);
-    top: calc(-100% * 76 / 1948);
-    width: calc(100% * 3128 / 2904);
-    height: calc(100% * 2172 / 1948);
+    left: calc(-100% * 112 / 2800);
+    top: calc(-100% * 76 / 1960);
+    width: calc(100% * 3024 / 2800);
+    height: calc(100% * 2184 / 1960);
     max-width: none;
     object-fit: contain
 }
@@ -1399,6 +1399,14 @@ img {
 
 .ask {
     padding: 135px 0
+}
+
+.ask .display {
+    font-size: clamp(32px, 3.8vw, 52px);
+}
+
+.product-memory .compute + .compute {
+    margin-top: 24px;
 }
 
 .ask-wrap {
