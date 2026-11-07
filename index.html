@@ -20,19 +20,19 @@
     <meta property="og:title" content="PUKNO — Always remember.">
     <meta property="og:description"
         content="PUKNO is a private personal AI memory assistant. It remembers the knowledge, ideas and moments of your life — a photo, a song, an email, a note. Just ask.">
-    <meta property="og:image" content="https://pukno.ai/assets/screenshots/darkmode/pukno-day-timeline.png">
+    <meta property="og:image" content="https://pukno.ai/assets/screenshots/darkmode/3_pukno_screen_timeline.png">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="3128">
-    <meta property="og:image:height" content="2172">
+    <meta property="og:image:width" content="3024">
+    <meta property="og:image:height" content="2184">
     <meta property="og:image:alt"
-        content="PUKNO's day timeline showing app activity, recorded events, and a selected Spotify memory">
+        content="PUKNO's timeline showing recorded activity and event context">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="PUKNO — Always remember.">
     <meta name="twitter:description"
         content="PUKNO is a private personal AI memory assistant. It remembers the knowledge, ideas and moments of your life — a photo, a song, an email, a note. Just ask.">
-    <meta name="twitter:image" content="https://pukno.ai/assets/screenshots/darkmode/pukno-day-timeline.png">
+    <meta name="twitter:image" content="https://pukno.ai/assets/screenshots/darkmode/3_pukno_screen_timeline.png">
     <meta name="twitter:image:alt"
-        content="PUKNO's day timeline showing app activity, recorded events, and a selected Spotify memory">
+        content="PUKNO's timeline showing recorded activity and event context">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/site.css">
@@ -117,15 +117,15 @@
                                 <figure class="hero-slide hero-slide--fill" id="hero-slide-timeline" role="group"
                                     aria-roledescription="slide" aria-label="1 of 5: Timeline"
                                     data-caption="Your day, in context. Explore app activity and revisit a selected moment.">
-                                    <img src="assets/screenshots/darkmode/pukno-day-timeline.png"
-                                        alt="PUKNO day timeline with an activity histogram, event list and selected Spotify event"
+                                    <img src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
+                                        alt="PUKNO timeline showing recorded activity and event context"
                                         decoding="async" fetchpriority="high">
                                 </figure>
                                 <figure class="hero-slide hero-slide--fill" id="hero-slide-activity" role="group"
                                     aria-roledescription="slide" aria-label="2 of 5: Activity"
                                     data-caption="Activity at a glance. See active time, event counts and your most-used apps."
                                     hidden>
-                                    <img src="assets/screenshots/darkmode/pukno-activity-border.png"
+                                    <img src="assets/screenshots/darkmode/2_pukno_screen_activity.png"
                                         alt="PUKNO activity dashboard showing total events, active time and frequently used applications"
                                         decoding="async" loading="lazy">
                                 </figure>
@@ -134,23 +134,23 @@
                                     aria-roledescription="slide" aria-label="3 of 5: Search"
                                     data-caption="Find the right moment. Search your history and narrow it with filters."
                                     hidden>
-                                    <img src="assets/screenshots/darkmode/pukno-timeline-search.png"
-                                        alt="PUKNO timeline search results for Rust with activity and date filters"
+                                    <img src="assets/screenshots/darkmode/3_pukno_screen_timeline_search.png"
+                                        alt="PUKNO timeline search results with activity and date filters"
                                         decoding="async" loading="lazy">
                                 </figure>
                                 <figure class="hero-slide hero-slide--fill" id="hero-slide-quick-look" role="group"
                                     aria-roledescription="slide" aria-label="4 of 5: Quick Look"
                                     data-caption="Revisit the screen. Open a captured screenshot in Quick Look." hidden>
-                                    <img src="assets/screenshots/darkmode/pukno-quick-look-view.png"
-                                        alt="PUKNO Quick Look displaying a captured Spotify screenshot" decoding="async"
+                                    <img src="assets/screenshots/darkmode/3_pukno_screen_timeline_quicklook.png"
+                                        alt="PUKNO Quick Look displaying a captured screenshot" decoding="async"
                                         loading="lazy">
                                 </figure>
                                 <figure class="hero-slide hero-slide--fill" id="hero-slide-chat" role="group"
                                     aria-roledescription="slide" aria-label="5 of 5: Chat"
                                     data-caption="A space for local AI. Choose a model and keep conversations alongside your activity."
                                     hidden>
-                                    <img src="assets/screenshots/darkmode/pukno-chat-interface.png"
-                                        alt="PUKNO chat workspace with a local model selector, conversation list and answer"
+                                    <img src="assets/screenshots/darkmode/5_pukno_screen_chat_timeline.png"
+                                        alt="PUKNO chat discussing timeline activity"
                                         decoding="async" loading="lazy">
                                 </figure>
                                 <!-- Optional Memory slide: uncomment this block and the Memory button below to re-enable. -->
@@ -628,8 +628,8 @@
                     <article class="pcard reveal">
                         <div class="icon"><i class="fa-solid fa-microchip"></i></div>
                         <h3>On-device AI</h3>
-                        <p>AI models runs directly on your Mac, so your prompts and personal context stay on your
-                            device instead of being sent to a cloud LLM.</p>
+                        <p>By default, AI models run directly on your Mac. Remote processing through Private Compute
+                            requires your explicit consent.</p>
                     </article>
                     <article class="pcard reveal">
                         <div class="icon"><i class="fa-solid fa-hard-drive"></i></div>
@@ -640,8 +640,8 @@
                     <article class="pcard reveal">
                         <div class="icon"><i class="fa-solid fa-lock"></i></div>
                         <h3>End-to-end encrypted sync</h3>
-                        <p>Today, your context does not leave your Mac. Future sync will use end-to-end encryption so it
-                            can travel securely between your devices.</p>
+                        <p>Cross-device sync is planned. It will use end-to-end encryption to keep your memory private
+                            as it moves between your devices.</p>
                     </article>
                     <article class="pcard reveal">
                         <div class="icon"><i class="fa-solid fa-eye-slash"></i></div>
@@ -698,11 +698,22 @@
                                 context — even when you only remember part of them.</p>
                         </div>
                     </div>
+                    <div class="compute reveal">
+                        <div class="future-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div>
+                            <small><b>PUKNO Private Compute · Available now</b></small>
+                            <h3>More intelligence when you need it.</h3>
+                            <p>Requests run entirely on your device by default. For more demanding tasks, use larger
+                                models inside protected confidential-computing environments — <strong>only with your
+                                    explicit consent</strong> and according to settings you control. Your personal
+                                context remains private, even when the model is remote.</p>
+                        </div>
+                    </div>
                     <div class="shots memory-shots">
                         <article class="shot reveal">
-                            <div class="shot-media"><img src="assets/screenshots/darkmode/pukno-search.png"
-                                    data-dark-src="assets/screenshots/darkmode/pukno-search.png"
-                                    data-light-src="assets/screenshots/lightmode/pukno-search-trump-1.png"
+                            <div class="shot-media"><img src="assets/screenshots/darkmode/4_pukno_screen_search_snapshot.png"
+                                    data-dark-src="assets/screenshots/darkmode/4_pukno_screen_search_snapshot.png"
+                                    data-light-src="assets/screenshots/darkmode/4_pukno_screen_search_snapshot.png"
                                     alt="PUKNO Search showing captured screenshots ranked by similarity to a topic"
                                     loading="lazy" decoding="async"></div>
                             <div class="shot-copy">
@@ -712,19 +723,19 @@
                             </div>
                             <details class="memory-extra">
                                 <summary>See a more specific search</summary>
-                                <!-- Dark-mode placeholder: replace data-dark-src when its screenshot is available. -->
-                                <div class="shot-media"><img src="assets/screenshots/lightmode/pukno-search-trump-2.png"
-                                        data-dark-src="assets/screenshots/lightmode/pukno-search-trump-2.png"
-                                        data-light-src="assets/screenshots/lightmode/pukno-search-trump-2.png"
-                                        alt="PUKNO screenshot search refined from a person's name to a description of them with their family"
+
+                                <div class="shot-media"><img src="assets/screenshots/darkmode/4_pukno_screen_search_trump.png"
+                                        data-dark-src="assets/screenshots/darkmode/4_pukno_screen_search_trump.png"
+                                        data-light-src="assets/screenshots/darkmode/4_pukno_screen_search_trump.png"
+                                        alt="PUKNO screenshot search results for Trump"
                                         loading="lazy" decoding="async"></div>
                             </details>
                         </article>
                         <article class="shot reveal">
-                            <div class="shot-media"><img src="assets/screenshots/darkmode/pukno-chat-interface-youtube.png"
-                                    data-dark-src="assets/screenshots/darkmode/pukno-chat-interface-youtube.png"
-                                    data-light-src="assets/screenshots/lightmode/pukno-chat-interface-youtube.png"
-                                    alt="PUKNO chat retrieving previously watched YouTube videos about Rust programming, with source cards"
+                            <div class="shot-media"><img src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
+                                    data-dark-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
+                                    data-light-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
+                                    alt="PUKNO chat recalling YouTube viewing activity with context"
                                     loading="lazy" decoding="async"></div>
                             <div class="shot-copy">
                                 <h3>Ask your memory.</h3>
@@ -733,11 +744,11 @@
                             </div>
                             <details class="memory-extra">
                                 <summary>See a recalled viewing session</summary>
-                                <!-- Dark-mode placeholder: replace data-dark-src when its screenshot is available. -->
-                                <div class="shot-media"><img src="assets/screenshots/lightmode/pukno-chat-interface-youtube-2.png"
-                                        data-dark-src="assets/screenshots/lightmode/pukno-chat-interface-youtube-2.png"
-                                        data-light-src="assets/screenshots/lightmode/pukno-chat-interface-youtube-2.png"
-                                        alt="PUKNO chat recalling a YouTube viewing session about phones, with event details, content context and cited sources"
+
+                                <div class="shot-media"><img src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube_2.png"
+                                        data-dark-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube_2.png"
+                                        data-light-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube_2.png"
+                                        alt="PUKNO chat recalling a YouTube viewing session with context"
                                         loading="lazy" decoding="async"></div>
                             </details>
                         </article>
@@ -746,9 +757,9 @@
 
                 <div class="shots">
                     <article class="shot reveal">
-                        <div class="shot-media"><img src="assets/screenshots/darkmode/pukno-timeline.png"
-                                data-dark-src="assets/screenshots/darkmode/pukno-timeline.png"
-                                data-light-src="assets/screenshots/lightmode/pukno-day-timeline.png"
+                        <div class="shot-media"><img src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
+                                data-dark-src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
+                                data-light-src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
                                 alt="PUKNO chronological activity timeline with application and session context"
                                 loading="lazy"></div>
                         <div class="shot-copy">
@@ -758,9 +769,9 @@
                         </div>
                     </article>
                     <article class="shot reveal">
-                        <div class="shot-media"><img src="assets/screenshots/darkmode/pukno-timeline-search.png"
-                                data-dark-src="assets/screenshots/darkmode/pukno-timeline-search.png"
-                                data-light-src="assets/screenshots/lightmode/pukno-timeline-search.png"
+                        <div class="shot-media"><img src="assets/screenshots/darkmode/3_pukno_screen_timeline_search.png"
+                                data-dark-src="assets/screenshots/darkmode/3_pukno_screen_timeline_search.png"
+                                data-light-src="assets/screenshots/darkmode/3_pukno_screen_timeline_search.png"
                                 alt="PUKNO timeline search interface with application, activity, date and session filters"
                                 loading="lazy"></div>
                         <div class="shot-copy">
@@ -770,9 +781,9 @@
                         </div>
                     </article>
                     <article class="shot reveal">
-                        <div class="shot-media"><img src="assets/screenshots/darkmode/pukno-activity-border.png"
-                                data-dark-src="assets/screenshots/darkmode/pukno-activity-border.png"
-                                data-light-src="assets/screenshots/lightmode/pukno-activity-border.png"
+                        <div class="shot-media"><img src="assets/screenshots/darkmode/2_pukno_screen_activity.png"
+                                data-dark-src="assets/screenshots/darkmode/2_pukno_screen_activity.png"
+                                data-light-src="assets/screenshots/darkmode/2_pukno_screen_activity.png"
                                 alt="PUKNO activity dashboard with event totals, active time and app usage"
                                 loading="lazy" decoding="async"></div>
                         <div class="shot-copy">
@@ -782,10 +793,10 @@
                         </div>
                     </article>
                     <article class="shot reveal">
-                        <div class="shot-media"><img src="assets/screenshots/darkmode/pukno-timeline-detail.png"
-                                data-dark-src="assets/screenshots/darkmode/pukno-timeline-detail.png"
-                                data-light-src="assets/screenshots/lightmode/pukno-timeline-detail.png"
-                                alt="PUKNO event preview over a color-coded activity timeline" loading="lazy"
+                        <div class="shot-media"><img src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
+                                data-dark-src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
+                                data-light-src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
+                                alt="PUKNO activity timeline with event context" loading="lazy"
                                 decoding="async"></div>
                         <div class="shot-copy">
                             <h3>The detail behind the day.</h3>
@@ -794,10 +805,10 @@
                         </div>
                     </article>
                     <article class="shot reveal">
-                        <div class="shot-media"><img src="assets/screenshots/darkmode/pukno-quick-look-view.png"
-                                data-dark-src="assets/screenshots/darkmode/pukno-quick-look-view.png"
-                                data-light-src="assets/screenshots/lightmode/pukno-quick-look-view.png"
-                                alt="PUKNO Quick Look modal showing a captured Spotify screen" loading="lazy"
+                        <div class="shot-media"><img src="assets/screenshots/darkmode/3_pukno_screen_timeline_quicklook.png"
+                                data-dark-src="assets/screenshots/darkmode/3_pukno_screen_timeline_quicklook.png"
+                                data-light-src="assets/screenshots/darkmode/3_pukno_screen_timeline_quicklook.png"
+                                alt="PUKNO Quick Look showing a captured screenshot" loading="lazy"
                                 decoding="async"></div>
                         <div class="shot-copy">
                             <h3>Bring the moment back.</h3>
@@ -806,10 +817,10 @@
                         </div>
                     </article>
                     <article class="shot reveal">
-                        <div class="shot-media"><img src="assets/screenshots/darkmode/pukno-chat-interface.png"
-                                data-dark-src="assets/screenshots/darkmode/pukno-chat-interface.png"
-                                data-light-src="assets/screenshots/lightmode/pukno-chat-interface.png"
-                                alt="PUKNO local AI chat workspace with model selection and conversation history"
+                        <div class="shot-media"><img src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
+                                data-dark-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
+                                data-light-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
+                                alt="PUKNO chat recalling YouTube viewing activity with context"
                                 loading="lazy" decoding="async"></div>
                         <div class="shot-copy">
                             <h3>A conversation with context.</h3>
@@ -861,21 +872,6 @@
                             <p>PUKNO Sync is intended to keep your memory and personal context available on your
                                 authorized devices using end-to-end encryption, while the synchronization layer moves
                                 encrypted data without needing to understand it.</p>
-                        </div>
-                    </div>
-                    <div class="compute reveal">
-                        <div class="future-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
-                        <div><small><b>PUKNO Private Compute </b> - FUTURE</small>
-                            <h3>More intelligence when you need it.</h3>
-                            <!--<p>All requests can run entirely on your device. In the future upon your consent and configuration , more demanding tasks may use larger models
-                                inside protected confidential-computing environments, designed so your personal context
-                                remains private even when the model is remote.</p>-->
-                            <p>Requests run entirely on your device by default. In the future, more demanding tasks may
-                                use larger models inside protected confidential-computing environments — <strong>but
-                                    only with your
-                                    explicit consent</strong> and according to settings you control. Your personal
-                                context remains private, even when the model is remote.</p>
-
                         </div>
                     </div>
                     <div class="compute reveal">
@@ -1086,17 +1082,16 @@
                             capture, history and
                             local recall can work without sending your personal context to a remote AI service. </p>
 
-                        <p>In future versions, you may optionally connect PUKNO to your own AI workstation
-                            or use PUKNO Private Compute for tasks that benefit from more powerful models.</p>
+                        <p>Optional PUKNO Private Compute is available now for tasks that benefit from more powerful
+                            models. It requires an internet connection and your explicit consent. Connecting your own
+                            AI workstation is planned for a future version.</p>
                     </details>
                     <details>
                         <summary>Does my data leave my device?</summary>
-                        <p>PBy default, PUKNO is local-first. Your activity history, memory and personal
-                            context are designed to remain on your devices.</p>
-                        <p>Future capabilities such as PUKNO Sync and PUKNO Private Compute are being designed to
-                            extend what PUKNO can do without giving PUKNO unrestricted access to your personal data.
-                            Remote processing would only happen when required for a feature you choose to use
-                            and under the privacy controls designed for that service.</p>
+                        <p>By default, PUKNO processes your activity and personal context locally on your Mac.</p>
+                        <p>If you explicitly approve Private Compute, context for your request is processed in a
+                            protected confidential-computing environment using settings you control. Cross-device
+                            sync remains a future feature and is planned to use end-to-end encryption.</p>
                     </details>
                     <details>
                         <summary>Can PUKNO take actions for me?</summary>
@@ -1179,6 +1174,14 @@
                                     ask about activity you remember, and retrieve relevant moments with their context
                                     and source cards — including videos you watched.
                                 </p>
+
+                                <p>
+                                    <strong>PUKNO Private Compute</strong><br>
+                                    Requests run on your device by default. For more demanding tasks, Private Compute
+                                    gives you access to larger models in protected confidential-computing environments.
+                                    Remote processing requires your explicit consent and follows settings you control,
+                                    keeping your personal context private even when the model is remote.
+                                </p>
                             </div>
 
                             <div class="faq-roadmap-future">
@@ -1199,38 +1202,6 @@
                                     not need access to the readable contents of your memory for your devices to stay
                                     synchronized and continue building
                                     the same personal context.
-                                </p>
-
-                                <p>
-                                    <strong>PUKNO Private Compute</strong><br>
-                                    PUKNO is designed to keep personal context and AI processing local whenever
-                                    possible. Some requests, however,
-                                    may benefit from models that are too large or computationally demanding to run
-                                    efficiently on your device.
-                                </p>
-
-                                <p>
-                                    PUKNO Private Compute is intended to provide a privacy-preserving path to that
-                                    additional computing power.
-                                    When you explicitly approve a request, PUKNO could prepare only the context required
-                                    for that task and send
-                                    it to an isolated confidential-compute environment running a more capable model.
-                                </p>
-                                <p>
-                                    The goal is to give PUKNO access to powerful remote inference when needed without
-                                    exposing your broader
-                                    personal memory to the infrastructure providing that compute.
-                                </p>
-
-                                <p>
-                                    This could eventually be provided through PUKNO-operated infrastructure or
-                                    compatible confidential-compute services.
-                                    It would be invoked only when needed, only with your explicit consent and always
-                                    under your control.
-
-                                    Only the context required for the task you approve would be sent.
-                                    Data would be encrypted in transit and at rest and processed only inside the
-                                    protected compute environment.
                                 </p>
 
                                 <p>
