@@ -4155,13 +4155,16 @@ body { color: var(--mono-ink); font-family: -apple-system, BlinkMacSystemFont, "
 .hero h1 { font-weight: 800; letter-spacing: -.082em; line-height: .96; }
 .hero .lead { font-weight: 400; letter-spacing: -.025em; }
 .hero-copy > p, .hero-copy > .reveal p { color: var(--mono-muted); line-height: 1.65; }
+
 .hero-copy > p strong { color: var(--mono-ink); font-weight: 650; }
 .hero-sub, [data-theme="light"] .hero-sub { color: var(--mono-ink); }
 .hero-details { border-top: 1px solid var(--mono-border); color: var(--mono-muted); }
 .hero-logo { box-shadow: none; }
 @media (min-width: 981px) {
     .hero--split .hero-layout { grid-template-columns: minmax(0, .88fr) minmax(0, 1.22fr); align-items: center; gap: clamp(45px, 5vw, 85px); }
-    .hero--split h1 { font-size: clamp(61px, 6.3vw, 104px); }
+    .hero--split .hero-copy { container-type: inline-size; }
+    .hero--split h1 { font-size: min(93.5px, 13.2cqw); white-space: nowrap; }
+    html[lang="el"] .hero--split h1 { font-size: min(67.1px, 12.1cqw); }
     .hero--split .lead { font-size: clamp(19px, 1.7vw, 23px); }
 }
 /* Product screenshots remain the original local assets; only their framing changes. */
