@@ -932,179 +932,29 @@
 -->
         <!-- End disabled section: Why PUKNO. -->
 
-        <section class="section dark faq-section" id="faq">
+        <section class="section dark faq-section" id="faq" aria-labelledby="faq-title">
             <div class="container faq-layout">
-                <div class="faq-intro">
-                    <div class="eyebrow cyan reveal">Frequently asked questions</div>
-                    <h2 class="display reveal">A little more<br><span class="gradient">context.</span></h2>
-                    <p class="lead reveal">How PUKNO works today, where personal memory is going and
-                        how we're thinking about privacy along the way.
-                    </p>
+                <div class="faq-intro"><div class="eyebrow cyan">Frequently asked questions</div><h2 class="display" id="faq-title">Good questions.<br><span class="gradient">Clear answers.</span></h2><p class="lead">Everything you need to know about PUKNO, your privacy, and what&#x27;s coming next.</p></div>
+                <div class="faq-tabs" role="tablist" aria-label="Frequently asked questions">
+                    <button class="faq-tab" type="button" role="tab" id="faq-tab-0" aria-controls="faq-panel-0" aria-selected="true" tabindex="0">Getting Started</button>
+                    <button class="faq-tab" type="button" role="tab" id="faq-tab-1" aria-controls="faq-panel-1" aria-selected="false" tabindex="-1">Privacy &amp; Security</button>
+                    <button class="faq-tab" type="button" role="tab" id="faq-tab-2" aria-controls="faq-panel-2" aria-selected="false" tabindex="-1">What&#x27;s Next</button>
                 </div>
-                <div class="faq-list reveal">
-                    <details>
-                        <summary>What does PUKNO remember?</summary>
-                        <p>PUKNO begins by remembering the activity across your Mac — what apps you used, what you were
-                            working on and
-                            when it happened. It turns that activity into a searchable timeline that helps you return to
-                            things you may
-                            no longer remember exactly.</p>
-                    </details>
-                    <details>
-                        <summary>Does PUKNO work offline?</summary>
-                        <p>Yes. Today, PUKNO runs and processes your activity locally on your Mac. Core activity
-                            capture, history and
-                            local recall can work without sending your personal context to a remote AI service. </p>
-
-                        <p>Optional PUKNO Private Compute is available now for tasks that benefit from more powerful
-                            models. It requires an internet connection and your explicit consent. Connecting your own
-                            AI workstation is planned for a future version.</p>
-                    </details>
-                    <details>
-                        <summary>Does my data leave my device?</summary>
-                        <p>By default, PUKNO processes your activity and personal context locally on your Mac.</p>
-                        <p>If you explicitly approve Private Compute, context for your request is processed in a
-                            protected confidential-computing environment using settings you control. Cross-device
-                            sync remains a future feature and is planned to use end-to-end encryption.</p>
-                    </details>
-                    <details>
-                        <summary>Can PUKNO take actions for me?</summary>
-                        <p>
-                            Not yet. PUKNO is starting with memory, context and reasoning. Future PUKNO Agents are
-                            intended
-                            to go beyond answering questions by understanding what you want to accomplish, choosing the
-                            tools they need and carrying out the steps for you.
-                        </p>
-                        <p>
-                            That could mean finding information you saw before, working with files, navigating apps,
-                            creating calendar events, sending messages or completing multi-step tasks across your Mac
-                            and connected services.
-                        </p>
-                        <p>
-                            The difference is context: PUKNO Agents are intended to act using the personal memory PUKNO
-                            has already built, so you can ask things like “Book the hotel I was looking at last week”
-                            without having to explain everything again.
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary>Which platforms are supported?</summary>
-                        <p>
-                            <strong>macOS</strong><br>
-                            PUKNO is currently being built for macOS, with the first releases focused on Apple silicon
-                            Macs.
-                            The macOS version is the primary development target and the first platform where PUKNO's
-                            activity
-                            capture, local context and memory features are being developed.
-                        </p>
-
-                        <p>
-                            <strong>Windows</strong><br>
-                            Windows support is planned. PUKNO will use native Windows system and accessibility APIs to
-                            understand
-                            which applications, windows and workflows you're interacting with, allowing it to build the
-                            same kind
-                            of private activity context and personal memory available on macOS.
-                        </p>
-
-                        <p>
-                            <strong>Linux</strong><br>
-                            Linux support is also planned, with desktop-specific integrations rather than a single
-                            generic
-                            implementation. Initial targets include GNOME and COSMIC Desktop, with support shaped around
-                            the
-                            APIs and security model exposed by each desktop environment and compositor.
-                        </p>
-
-                        <p>
-                            Across every platform, the goal is the same: capture only the activity signals needed to
-                            build your
-                            personal context and PUKNO Memory while respecting the security, privacy and permission
-                            model of
-                            each operating system.
-                        </p>
-
-                    </details>
-
-                    <details>
-                        <summary>What is available now, and what is coming next?</summary>
-
-                        <div class="faq-roadmap">
-                            <div class="faq-roadmap-current">
-                                <h4>Available today</h4>
-
-                                <p>
-                                    <strong>PUKNO Activity Capture</strong><br>
-                                    PUKNO currently captures and organizes activity from your Mac — including the apps
-                                    you use, application
-                                    and window context, sessions, timestamps and supported web activity. This creates a
-                                    private activity
-                                    history of what you were doing and when, which PUKNO Memory uses for search and chat.
-                                </p>
-
-                                <p>
-                                    <strong>PUKNO Memory</strong><br>
-                                    Memory is integrated into search and chat. Search captured screenshots by topic,
-                                    ask about activity you remember, and retrieve relevant moments with their context
-                                    and source cards — including videos you watched.
-                                </p>
-
-                                <p>
-                                    <strong>PUKNO Private Compute</strong><br>
-                                    Requests run on your device by default. For more demanding tasks, Private Compute
-                                    gives you access to larger models in protected confidential-computing environments.
-                                    Remote processing requires your explicit consent and follows settings you control,
-                                    keeping your personal context private even when the model is remote.
-                                </p>
-                            </div>
-
-                            <div class="faq-roadmap-future">
-                                <h4>What we're building toward</h4>
-
-                                <p>
-                                    <strong>PUKNO Sync</strong><br>
-                                    PUKNO Sync is intended to make your memory, context and personal intelligence
-                                    available across your devices
-                                    while keeping that information private. Your activity, memories and personal context
-                                    would be protected with
-                                    end-to-end encryption so that only your authorized devices can access them.
-                                </p>
-
-                                <p>
-                                    The synchronization layer is intended to move encrypted data, not understand it.
-                                    Future PUKNO's sync should
-                                    not need access to the readable contents of your memory for your devices to stay
-                                    synchronized and continue building
-                                    the same personal context.
-                                </p>
-
-                                <p>
-                                    <strong>PUKNO Agents</strong><br>
-                                    PUKNO Agents are intended to turn memory, context and reasoning into action. An
-                                    agent could understand what you
-                                    want to accomplish, retrieve the relevant personal context, decide which tools are
-                                    needed and carry out multiple
-                                    steps across your computer, apps and connected services.
-                                </p>
-
-                                <p>
-                                    Instead of only answering “What hotel was I looking at?”, a PUKNO Agent could
-                                    eventually understand
-                                    “Book the hotel I was looking at last week,” recover the relevant memory, identify
-                                    the hotel you meant,
-                                    choose the appropriate tools and complete the task on your behalf.
-                                </p>
-                            </div>
-                        </div>
-
-                    </details>
-                    <details>
-                        <summary>What does PUKNO mean?</summary>
-                        <p>PUKNO comes from “Personalized Universal KNOwledge” — the idea of building private personal
-                            intelligence from
-                            what you've seen, learned, explored and created over time.</p>
-                    </details>
+                <div class="faq-list" role="tabpanel" id="faq-panel-0" aria-labelledby="faq-tab-0">
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-0-0" aria-expanded="false" aria-controls="faq-answer-0-0">What does PUKNO remember?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-0-0" role="region" aria-labelledby="faq-question-0-0" inert><div><p>PUKNO Memory turns activity on your Mac — apps, sessions and captured screenshots — into a searchable timeline. Find moments by topic or ask questions in chat, with relevant context and source cards.</p></div></div></article>
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-0-1" aria-expanded="false" aria-controls="faq-answer-0-1">Does PUKNO work offline?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-0-1" role="region" aria-labelledby="faq-question-0-1" inert><div><p>Yes. Activity capture, history and local AI recall run on your Mac without sending your personal context to a remote AI service. Optional Private Compute requires an internet connection.</p></div></div></article>
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-0-2" aria-expanded="false" aria-controls="faq-answer-0-2">Which platforms are supported?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-0-2" role="region" aria-labelledby="faq-question-0-2" inert><div><p>PUKNO is being built for macOS, with the first releases focused on Apple silicon Macs. Windows and Linux support are planned.</p></div></div></article>
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-0-3" aria-expanded="false" aria-controls="faq-answer-0-3">What does PUKNO mean?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-0-3" role="region" aria-labelledby="faq-question-0-3" inert><div><p>PUKNO stands for “Personalized Universal KNOwledge”: private personal intelligence built from what you’ve seen, learned and created.</p></div></div></article>
                 </div>
+                <div class="faq-list" role="tabpanel" id="faq-panel-1" aria-labelledby="faq-tab-1" hidden>
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-1-0" aria-expanded="false" aria-controls="faq-answer-1-0">Does my data leave my device?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-1-0" role="region" aria-labelledby="faq-question-1-0" inert><div><p>Your activity and personal context are processed locally by default. If you explicitly approve Private Compute, context for that request is processed remotely in a protected confidential-computing environment.</p></div></div></article>
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-1-1" aria-expanded="false" aria-controls="faq-answer-1-1">What is Private Compute?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-1-1" role="region" aria-labelledby="faq-question-1-1" inert><div><p>Private Compute gives you optional access to larger AI models for more demanding tasks. Remote processing requires your explicit consent and follows settings you control; local AI remains the default.</p></div></div></article>
+                </div>
+                <div class="faq-list" role="tabpanel" id="faq-panel-2" aria-labelledby="faq-tab-2" hidden>
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-2-0" aria-expanded="false" aria-controls="faq-answer-2-0">Will my memory sync across devices?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-2-0" role="region" aria-labelledby="faq-question-2-0" inert><div><p>PUKNO Sync is planned, not available yet. It is designed to connect your memory across devices using end-to-end encryption, so only your authorized devices can read it.</p></div></div></article>
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-2-1" aria-expanded="false" aria-controls="faq-answer-2-1">Can PUKNO take actions for me?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-2-1" role="region" aria-labelledby="faq-question-2-1" inert><div><p>Not yet. Agents can currently read your local memory and retrieve context, but cannot change data or take actions. Multi-agent coordination and task execution are planned.</p></div></div></article>
+                </div>
+                <div class="faq-cta"><div><h3>Want to try PUKNO?</h3><p>Join the early-access list and help shape what comes next.</p></div><a class="pill" href="#notify" aria-haspopup="dialog">Get Early Access</a></div>
             </div>
         </section>
 

@@ -24,6 +24,43 @@ todayTabs.forEach((tab, index) => {
     });
 });
 
+const faqTabs = [...document.querySelectorAll('.faq-tab')];
+const faqQuestions = [...document.querySelectorAll('.faq-question')];
+const setFaqExpanded = (question, expanded) => {
+    question.setAttribute('aria-expanded', String(expanded));
+    const answer = document.getElementById(question.getAttribute('aria-controls'));
+    answer.inert = !expanded;
+    answer.classList.toggle('is-open', expanded);
+};
+const selectFaqTab = index => {
+    faqQuestions.forEach(question => setFaqExpanded(question, false));
+    faqTabs.forEach((tab, i) => {
+        tab.setAttribute('aria-selected', String(i === index));
+        tab.tabIndex = i === index ? 0 : -1;
+        document.getElementById(tab.getAttribute('aria-controls')).hidden = i !== index;
+    });
+};
+faqTabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => selectFaqTab(index));
+    tab.addEventListener('keydown', event => {
+        let next;
+        if (event.key === 'ArrowRight') next = (index + 1) % faqTabs.length;
+        else if (event.key === 'ArrowLeft') next = (index - 1 + faqTabs.length) % faqTabs.length;
+        else if (event.key === 'Home') next = 0;
+        else if (event.key === 'End') next = faqTabs.length - 1;
+        else return;
+        event.preventDefault();
+        selectFaqTab(next);
+        faqTabs[next].focus();
+    });
+});
+faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+        const expand = question.getAttribute('aria-expanded') !== 'true';
+        faqQuestions.forEach(other => setFaqExpanded(other, other === question && expand));
+    });
+});
+
 const privacyCards = [...document.querySelectorAll('[data-privacy-card]')];
 privacyCards.forEach(card => {
     card.addEventListener('click', () => {
