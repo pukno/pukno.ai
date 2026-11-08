@@ -532,37 +532,57 @@
                 <div class="ask-wrap">
                     <div>
                         <div class="eyebrow reveal">Ask naturally</div>
-                        <h2 class="display reveal">You remember the idea.<br>PUKNO remembers the rest.</h2>
-                        <p class="lead reveal">Search the way memory actually works: fragments, places, feelings, topics
-                            and half-remembered details.</p>
+                        <h2 class="display reveal"><span>You remember the idea.</span><span>PUKNO remembers the rest.</span></h2>
+                        <p class="lead reveal">Ask questions naturally. PUKNO connects information across your digital life to give you answers shaped by your own experiences and memories.</p>
                         <div class="ask-list reveal">
-                            <div>“What was the paper I read about private AI on GPUs?”</div>
-                            <div>“Which book talked about systems that improve through feedback loops?”</div>
-                            <div>“Show me the videos I took on the trip where I read that architecture book.”</div>
-                            <div>“What did I learn about real estate tokenization last year?”</div>
+                            <div>“What was that hotel I found while planning my trip to Italy?”</div>
+                            <div>“Find the finance PDF from my MBA lectures and list all the books it references.”</div>
+                            <div>“Find the article I read last month about improving sleep and summarize its recommendations.”</div>
+                            <div>“Find those YouTube videos I watched about traveling to Greece and list all the hotels and places they recommended.”</div>
                         </div>
                     </div>
                     <div class="phone-card reveal">
                         <div class="assistant-mark"><img
                                 src="assets/pukno-logo-darkmode.JPG" data-dark-src="assets/pukno-logo-darkmode.JPG" data-light-src="assets/pukno-logo-lightmode.JPG"
                                 alt="">PUKNO</div>
-                        <div class="bigq">Show me the photos and videos from the trip where I read that architecture
-                            book.</div>
+                        <div class="bigq">What were the places I considered for a weekend getaway, and what did I like about each?</div>
                         <div class="response">
                             <div class="response-label">FOUND IN YOUR CONTEXT</div>
-                            <p>I found the trip — and the book you were reading. You saved 18 photos, 4 videos and 7
-                                highlights from the same week.</p>
-                            <div class="result-strip">
-                                <div class="result">
-                                    <div class="rvis"></div><b>Trip · 18 photos</b><small>September</small>
-                                </div>
-                                <div class="result">
-                                    <div class="rvis"></div><b>Architecture.pdf</b><small>17 highlights</small>
-                                </div>
-                                <div class="result">
-                                    <div class="rvis">FORM<br>+ SPACE</div><b>Book</b><small>Page 214</small>
-                                </div>
+                            <p>You explored Nafplio, Hydra, and Arachova. Here’s what stood out in the articles and videos you viewed.</p>
+                            <div class="destination-results">
+                                <article class="destination-card">
+                                    <img src="assets/destinations/nafplio.jpg" alt="Nafplio Town Hall in the old town" width="960" height="640" loading="lazy" decoding="async">
+                                    <h3>Nafplio</h3>
+                                    <p>Old-town walks and nearby beaches.</p>
+                                    <small>Article · Oct 8</small>
+                                </article>
+                                <article class="destination-card">
+                                    <img src="assets/destinations/hydra.jpg" alt="Hydra town and harbor" width="960" height="634" loading="lazy" decoding="async">
+                                    <h3>Hydra</h3>
+                                    <p>Car-free streets and a slower pace.</p>
+                                    <small>YouTube video · Oct 10</small>
+                                </article>
+                                <article class="destination-card">
+                                    <img src="assets/destinations/arachova.jpg" alt="Arachova village on a mountainside" width="960" height="638" loading="lazy" decoding="async">
+                                    <h3>Arachova</h3>
+                                    <p>Mountain views and cozy places to stay.</p>
+                                    <small>Travel guide · Oct 12</small>
+                                </article>
                             </div>
+                            <aside class="destination-insight">
+                                <h3>WHAT MATTERED TO YOU</h3>
+                                <p>Your research suggests you wanted a slower-paced weekend, with scenic walks and distinctive places to stay—not a packed sightseeing schedule.</p>
+                            </aside>
+                            <p class="destination-demo">Illustrative example · Sources and dates are sample content.</p>
+                            <details class="destination-credits">
+                                <summary>Photo credits</summary>
+                                <p>Wikimedia Commons thumbnails, cropped to fit. Photo licenses apply to the images only.</p>
+                                <ul>
+                                    <li><a href="https://commons.wikimedia.org/wiki/File:Δημαρχείο_Ναυπλίου,_Nafplio_Town_Hall.jpg">Nafplio Town Hall — Apaleutos25</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+                                    <li><a href="https://commons.wikimedia.org/wiki/File:Hydra_town_01.jpg">Hydra town — Herbert Ortner, Vienna, Austria</a> · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></li>
+                                    <li><a href="https://commons.wikimedia.org/wiki/File:GR-arachova.jpg">Arachova — User: Bgabel at wikivoyage shared</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></li>
+                                </ul>
+                            </details>
                         </div>
                     </div>
                 </div>
@@ -604,252 +624,110 @@
 -->
         <!-- End disabled section: Long-term memory timeline. -->
 
-        <section class="section dark privacy" id="privacy">
+        <section class="section dark privacy" id="privacy" aria-labelledby="privacy-heading">
             <div class="container">
-                <div class="privacy-grid">
-                    <div>
-                        <div class="eyebrow cyan reveal">Private by its very nature</div>
-                        <h2 class="display reveal">Something this personal<br>should stay personal.</h2>
-                        <p class="lead reveal">PUKNO begins on your Mac. Your memory stays close to where it was
-                            created, and on-device models can reason over your context without sending your digital life
-                            to a remote AI service.</p>
-                    </div>
-                    <div class="privacy-visual reveal">
-                        <div class="ring r1"></div>
-                        <div class="ring r2"></div>
-                        <div class="ring r3"></div>
-                        <div class="core"><img src="assets/pukno-logo-darkmode.JPG" data-dark-src="assets/pukno-logo-darkmode.JPG" data-light-src="assets/pukno-logo-lightmode.JPG" alt=""><span>LOCAL · ENCRYPTED · YOURS</span>
+                <div class="privacy-heading">
+                    <div class="eyebrow cyan reveal">Private by its very nature</div>
+                    <h2 class="display reveal" id="privacy-heading">Your memories. Your Mac. Your rules.</h2>
+                    <p class="lead reveal">Your digital life is personal. That's why PUKNO keeps your memory encrypted on your Mac, runs AI locally by default, and puts you in control of your data.</p>
+                </div>
+                <div class="privacy-layout">
+                    <div class="privacy-mac-stage" role="img" aria-label="Illustration of screens, documents, and AI memory encrypted inside your Mac">
+                        <div class="privacy-local" aria-hidden="true"><i class="fa-solid fa-hard-drive"></i> Stored on your Mac</div>
+                        <div class="privacy-mac" aria-hidden="true">
+                            <div class="privacy-mac-screen">
+                                <div class="privacy-window-bar"><span>● ● ●</span><span>PUKNO MEMORY</span><i class="fa-solid fa-lock"></i></div>
+                                <div class="privacy-memory-title">Your personal memory</div>
+                                <div class="privacy-memory-items"><div class="privacy-memory-item"><i class="fa-solid fa-window-maximize"></i><span>Screens</span><b></b><b></b></div><div class="privacy-memory-item"><i class="fa-solid fa-file-lines"></i><span>Documents</span><b></b><b></b></div><div class="privacy-memory-item"><i class="fa-solid fa-microchip"></i><span>AI memory</span><b></b><b></b></div></div>
+                                <div class="privacy-vault"><span><i class="fa-solid fa-lock"></i></span><strong>Encrypted. On your device.</strong></div>
+                            </div>
+                            <div class="privacy-mac-base"></div>
                         </div>
+                        <div class="privacy-device-caption" aria-hidden="true">LOCAL · ENCRYPTED · YOURS</div>
+                    </div>
+                    <div class="privacy-cards">
+                        <button class="privacy-card" type="button" id="privacy-trigger-0" aria-expanded="false" aria-controls="privacy-detail-0" data-privacy-card>
+                            <span class="privacy-card-top"><i class="fa-solid fa-microchip" aria-hidden="true"></i><span class="privacy-plus" aria-hidden="true">+</span></span>
+                            <span class="privacy-card-title">AI on your Mac</span>
+                            <span class="privacy-card-summary">Your AI runs locally by default.</span>
+                        </button>
+                        <button class="privacy-card" type="button" id="privacy-trigger-1" aria-expanded="false" aria-controls="privacy-detail-1" data-privacy-card>
+                            <span class="privacy-card-top"><i class="fa-solid fa-lock" aria-hidden="true"></i><span class="privacy-plus" aria-hidden="true">+</span></span>
+                            <span class="privacy-card-title">Encrypted Memory</span>
+                            <span class="privacy-card-summary">Your history stays protected.</span>
+                        </button>
+                        <button class="privacy-card" type="button" id="privacy-trigger-2" aria-expanded="false" aria-controls="privacy-detail-2" data-privacy-card>
+                            <span class="privacy-card-top"><i class="fa-solid fa-sliders" aria-hidden="true"></i><span class="privacy-plus" aria-hidden="true">+</span></span>
+                            <span class="privacy-card-title">You’re in Control</span>
+                            <span class="privacy-card-summary">Choose what PUKNO remembers.</span>
+                        </button>
+                        <button class="privacy-card" type="button" id="privacy-trigger-3" aria-expanded="false" aria-controls="privacy-detail-3" data-privacy-card>
+                            <span class="privacy-card-top"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span class="privacy-plus" aria-hidden="true">+</span></span>
+                            <span class="privacy-card-title">Private Compute</span>
+                            <span class="privacy-card-summary">Optional AI power, with your consent.</span>
+                        </button>
                     </div>
                 </div>
-                <div class="privacy3">
-                    <article class="pcard reveal">
-                        <div class="icon"><i class="fa-solid fa-microchip"></i></div>
-                        <h3>On-device AI</h3>
-                        <p>By default, AI models run directly on your Mac. Remote processing through Private Compute
-                            requires your explicit consent.</p>
-                    </article>
-                    <article class="pcard reveal">
-                        <div class="icon"><i class="fa-solid fa-hard-drive"></i></div>
-                        <h3>Local &amp; Private</h3>
-                        <p>Your personal data is stored locally on your Mac and <i>encrypted</i>, keeping your memory
-                            private and under your control.</p>
-                    </article>
-                    <article class="pcard reveal">
-                        <div class="icon"><i class="fa-solid fa-lock"></i></div>
-                        <h3>End-to-end encrypted sync</h3>
-                        <p>Cross-device sync is planned. It will use end-to-end encryption to keep your memory private
-                            as it moves between your devices.</p>
-                    </article>
-                    <article class="pcard reveal">
-                        <div class="icon"><i class="fa-solid fa-eye-slash"></i></div>
-                        <h3>No advertising profile</h3>
-                        <p>Your personal context exists to help you — not to become a behavioral profile for ads or
-                            third-party targeting.</p>
-                    </article>
+                <div class="privacy-details">
+                    <div class="privacy-detail" id="privacy-detail-0" role="region" aria-labelledby="privacy-trigger-0" hidden>
+                        <div class="privacy-detail-inner"><span class="privacy-detail-icon" aria-hidden="true"><i class="fa-solid fa-microchip"></i></span><div><h3>AI on your Mac</h3><p>On-device AI models work with your personal context directly on your Mac. By default, your questions and memories stay on your device instead of being sent to a remote AI service.</p></div></div>
+                    </div>
+                    <div class="privacy-detail" id="privacy-detail-1" role="region" aria-labelledby="privacy-trigger-1" hidden>
+                        <div class="privacy-detail-inner"><span class="privacy-detail-icon" aria-hidden="true"><i class="fa-solid fa-lock"></i></span><div><h3>Encrypted Memory</h3><p>Your personal history is stored locally and encrypted on your Mac. Your screens, documents, and the context that makes your memory useful stay protected, close to where they were created.</p></div></div>
+                    </div>
+                    <div class="privacy-detail" id="privacy-detail-2" role="region" aria-labelledby="privacy-trigger-2" hidden>
+                        <div class="privacy-detail-inner"><span class="privacy-detail-icon" aria-hidden="true"><i class="fa-solid fa-sliders"></i></span><div><h3>You’re in Control</h3><p>You decide what becomes part of your personal memory. Use PUKNO’s privacy settings to control what it remembers, keeping your personal context on your terms.</p></div></div>
+                    </div>
+                    <div class="privacy-detail" id="privacy-detail-3" role="region" aria-labelledby="privacy-trigger-3" hidden>
+                        <div class="privacy-detail-inner"><span class="privacy-detail-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span><div><h3>Private Compute</h3><p>Private Compute is planned for tasks that need larger AI models. Remote processing will be optional and require your explicit consent, using protected confidential-computing environments. Local AI remains the default.</p></div></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section dark today" id="product">
+        <section class="section dark today" id="product" aria-labelledby="today-heading">
             <div class="container">
-                <div class="today-hero">
-                    <div class="today-copy">
-                        <div class="eyebrow cyan reveal">PUKNO today</div>
-                        <h2 class="display reveal">Your digital activity.<br><span class="gradient">Connected to memory.</span></h2>
-                        <p class="lead reveal">Your day moves between apps, websites, documents and music. PUKNO
-                            brings that activity into a private timeline on your Mac, with memory search and chat
-                            that help you find what you remember and return to its context.</p>
-                        <div class="today-highlight reveal">
-                            <h3>From the overview to the moment.</h3>
-                            <p>Start with your activity dashboard, explore your day, narrow the search and open a
-                                captured moment in Quick Look. Search your captured screens by topic, or ask chat
-                                to retrieve a moment from your activity history.</p>
-                        </div>
+                <div class="today-intro">
+                    <div class="eyebrow cyan reveal">PUKNO Today</div>
+                    <h2 class="display reveal" id="today-heading">Your digital life. All connected.</h2>
+                    <p class="lead reveal">From the things you read to the projects you work on, PUKNO turns your everyday activity into a personal memory you can explore, search, and ask questions about.</p>
+                </div>
+                <div class="today-interactive">
+                    <div class="today-controls"><div class="today-tabs" role="tablist" aria-label="Explore PUKNO features"><button type="button" class="today-tab" role="tab" id="today-tab-remember" aria-controls="today-panel-remember" aria-selected="true" tabindex="0"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>Remember</button><button type="button" class="today-tab" role="tab" id="today-tab-find" aria-controls="today-panel-find" aria-selected="false" tabindex="-1"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>Find</button><button type="button" class="today-tab" role="tab" id="today-tab-ask" aria-controls="today-panel-ask" aria-selected="false" tabindex="-1"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i>Ask</button></div><span class="today-available"><span aria-hidden="true"></span>Available</span></div>
+                    <div class="today-panel" role="tabpanel" id="today-panel-remember" aria-labelledby="today-tab-remember" tabindex="0">
+                        <div class="today-panel-copy"><div><h3>Return to the moments that matter.</h3><p>Explore your day in a private timeline, with the context behind each moment.</p></div><ul class="today-highlights"><li>Activity timeline</li><li>App &amp; session context</li><li>Captured screen previews</li></ul></div>
+                        <figure class="today-showcase"><img src="assets/screenshots/darkmode/3_pukno_screen_timeline.png" alt="PUKNO activity timeline with applications and session context" loading="lazy" decoding="async" width="3024" height="2184"></figure>
                     </div>
-
-                    <div class="today-media reveal">
-                        <div class="today-window">
-                            <div class="today-window-bar" aria-hidden="true">
-                                <span class="today-window-dot red"></span>
-                                <span class="today-window-dot yellow"></span>
-                                <span class="today-window-dot green"></span>
-                                <span class="today-window-title">PUKNO – See it in action</span>
-                            </div>
-                            <iframe class="today-video" src="https://www.youtube-nocookie.com/embed/avDB-6EevxY"
-                                title="PUKNO product walkthrough" loading="lazy"
-                                referrerpolicy="strict-origin-when-cross-origin"
-                                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                                allowfullscreen></iframe>
-                        </div>
+                    <div class="today-panel" role="tabpanel" id="today-panel-find" aria-labelledby="today-tab-find" tabindex="0" hidden>
+                        <div class="today-panel-copy"><div><h3>Find it, even if you only remember a little.</h3><p>Describe what you remember and find relevant captured screens by topic.</p></div><ul class="today-highlights"><li>Semantic search</li><li>Ranked results</li><li>Visual previews</li></ul></div>
+                        <figure class="today-showcase"><img src="assets/screenshots/darkmode/4_pukno_screen_search_snapshot.png" alt="PUKNO screenshot search with results ranked by similarity" loading="lazy" decoding="async" width="3024" height="2184"></figure>
+                    </div>
+                    <div class="today-panel" role="tabpanel" id="today-panel-ask" aria-labelledby="today-tab-ask" tabindex="0" hidden>
+                        <div class="today-panel-copy"><div><h3>Ask a question. Reconnect the context.</h3><p>Ask about your activity and bring relevant memories into the conversation.</p></div><ul class="today-highlights"><li>Local AI chat</li><li>Connected memories</li><li>Source cards</li></ul></div>
+                        <figure class="today-showcase"><img src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png" alt="PUKNO chat recalling YouTube activity with source cards" loading="lazy" decoding="async" width="3024" height="2184"></figure>
                     </div>
                 </div>
-
-                <div class="product-memory" aria-labelledby="product-memory-title">
-                    <div class="compute reveal">
-                        <div class="future-icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></div>
-                        <div>
-                            <small><b>PUKNO Memory · Available now</b></small>
-                            <h3 id="product-memory-title">Your history, connected to your conversations.</h3>
-                            <p>PUKNO Memory connects your captured activity to search and chat. Search by topic or
-                                describe what you remember, then ask PUKNO to retrieve the relevant moments and their
-                                context — even when you only remember part of them.</p>
-                        </div>
-                    </div>
-                    <div class="compute reveal">
-                        <div class="future-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
-                        <div>
-                            <small><b>PUKNO Private Compute · Available now</b></small>
-                            <h3>More intelligence when you need it.</h3>
-                            <p>Requests run entirely on your device by default. For more demanding tasks, use larger
-                                models inside protected confidential-computing environments — <strong>only with your
-                                    explicit consent</strong> and according to settings you control. Your personal
-                                context remains private, even when the model is remote.</p>
-                        </div>
-                    </div>
-                    <div class="shots memory-shots">
-                        <article class="shot reveal">
-                            <div class="shot-media"><button type="button" class="screenshot-zoom" id="product-thumbnail-1" popovertarget="product-image-1" aria-label="Enlarge: PUKNO Search showing captured screenshots ranked by similarity to a topic"><img src="assets/screenshots/darkmode/4_pukno_screen_search_snapshot.png"
-                                    data-dark-src="assets/screenshots/darkmode/4_pukno_screen_search_snapshot.png"
-                                    data-light-src="assets/screenshots/darkmode/4_pukno_screen_search_snapshot.png"
-                                    alt="PUKNO Search showing captured screenshots ranked by similarity to a topic"
-                                    loading="lazy" decoding="async"><span class="screenshot-zoom-hint" aria-hidden="true">Enlarge ↗</span></button><a class="screenshot-original" href="assets/screenshots/darkmode/4_pukno_screen_search_snapshot.png" target="_blank" rel="noopener">Open full-size image</a></div>
-                            <div class="shot-copy">
-                                <h3>Search what you remember.</h3>
-                                <p>Find captured screens by topic, with ranked results and previews that help you
-                                    recognize the right moment. Refine your description to narrow the search.</p>
-                            </div>
-                            <details class="memory-extra">
-                                <summary>See a more specific search</summary>
-
-                                <div class="shot-media"><button type="button" class="screenshot-zoom" id="product-thumbnail-2" popovertarget="product-image-2" aria-label="Enlarge: PUKNO screenshot search results for Trump"><img src="assets/screenshots/darkmode/4_pukno_screen_search_trump.png"
-                                        data-dark-src="assets/screenshots/darkmode/4_pukno_screen_search_trump.png"
-                                        data-light-src="assets/screenshots/darkmode/4_pukno_screen_search_trump.png"
-                                        alt="PUKNO screenshot search results for Trump"
-                                        loading="lazy" decoding="async"><span class="screenshot-zoom-hint" aria-hidden="true">Enlarge ↗</span></button><a class="screenshot-original" href="assets/screenshots/darkmode/4_pukno_screen_search_trump.png" target="_blank" rel="noopener">Open full-size image</a></div>
-                            </details>
-                        </article>
-                        <article class="shot reveal">
-                            <div class="shot-media"><button type="button" class="screenshot-zoom" id="product-thumbnail-3" popovertarget="product-image-3" aria-label="Enlarge: PUKNO chat recalling YouTube viewing activity with context"><img src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
-                                    data-dark-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
-                                    data-light-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
-                                    alt="PUKNO chat recalling YouTube viewing activity with context"
-                                    loading="lazy" decoding="async"><span class="screenshot-zoom-hint" aria-hidden="true">Enlarge ↗</span></button><a class="screenshot-original" href="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png" target="_blank" rel="noopener">Open full-size image</a></div>
-                            <div class="shot-copy">
-                                <h3>Ask your memory.</h3>
-                                <p>Ask which videos you watched about a topic. PUKNO retrieves matching activity in
-                                    chat, with source cards that bring the answer back to its context.</p>
-                            </div>
-                            <details class="memory-extra">
-                                <summary>See a recalled viewing session</summary>
-
-                                <div class="shot-media"><button type="button" class="screenshot-zoom" id="product-thumbnail-4" popovertarget="product-image-4" aria-label="Enlarge: PUKNO chat recalling a YouTube viewing session with context"><img src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube_2.png"
-                                        data-dark-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube_2.png"
-                                        data-light-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube_2.png"
-                                        alt="PUKNO chat recalling a YouTube viewing session with context"
-                                        loading="lazy" decoding="async"><span class="screenshot-zoom-hint" aria-hidden="true">Enlarge ↗</span></button><a class="screenshot-original" href="assets/screenshots/darkmode/5_pukno_screen_chat_youtube_2.png" target="_blank" rel="noopener">Open full-size image</a></div>
-                            </details>
-                        </article>
-                    </div>
+                <div class="today-walkthrough">
+                    <div><div class="eyebrow">PUKNO · macOS</div><h3>See PUKNO in Action</h3><p>A closer look at your memory, search, and chat.</p></div>
+                    <iframe src="https://www.youtube-nocookie.com/embed/avDB-6EevxY" title="See PUKNO in Action" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
                 </div>
-
-                <div class="shots">
-                    <article class="shot reveal">
-                        <div class="shot-media"><button type="button" class="screenshot-zoom" id="product-thumbnail-5" popovertarget="product-image-5" aria-label="Enlarge: PUKNO chronological activity timeline with application and session context"><img src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
-                                data-dark-src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
-                                data-light-src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
-                                alt="PUKNO chronological activity timeline with application and session context"
-                                loading="lazy"><span class="screenshot-zoom-hint" aria-hidden="true">Enlarge ↗</span></button><a class="screenshot-original" href="assets/screenshots/darkmode/3_pukno_screen_timeline.png" target="_blank" rel="noopener">Open full-size image</a></div>
-                        <div class="shot-copy">
-                            <h3>Reconstruct your day.</h3>
-                            <p>Browse a chronological history of your activity with application and session context
-                                attached.</p>
-                        </div>
-                    </article>
-                    <article class="shot reveal">
-                        <div class="shot-media"><button type="button" class="screenshot-zoom" id="product-thumbnail-6" popovertarget="product-image-6" aria-label="Enlarge: PUKNO timeline search interface with application, activity, date and session filters"><img src="assets/screenshots/darkmode/3_pukno_screen_timeline_search.png"
-                                data-dark-src="assets/screenshots/darkmode/3_pukno_screen_timeline_search.png"
-                                data-light-src="assets/screenshots/darkmode/3_pukno_screen_timeline_search.png"
-                                alt="PUKNO timeline search interface with application, activity, date and session filters"
-                                loading="lazy"><span class="screenshot-zoom-hint" aria-hidden="true">Enlarge ↗</span></button><a class="screenshot-original" href="assets/screenshots/darkmode/3_pukno_screen_timeline_search.png" target="_blank" rel="noopener">Open full-size image</a></div>
-                        <div class="shot-copy">
-                            <h3>Find the right moment.</h3>
-                            <p>Search and filter by application, activity type, date or session to return to the context
-                                you need.</p>
-                        </div>
-                    </article>
-                    <article class="shot reveal">
-                        <div class="shot-media"><button type="button" class="screenshot-zoom" id="product-thumbnail-7" popovertarget="product-image-7" aria-label="Enlarge: PUKNO activity dashboard with event totals, active time and app usage"><img src="assets/screenshots/darkmode/2_pukno_screen_activity.png"
-                                data-dark-src="assets/screenshots/darkmode/2_pukno_screen_activity.png"
-                                data-light-src="assets/screenshots/darkmode/2_pukno_screen_activity.png"
-                                alt="PUKNO activity dashboard with event totals, active time and app usage"
-                                loading="lazy" decoding="async"><span class="screenshot-zoom-hint" aria-hidden="true">Enlarge ↗</span></button><a class="screenshot-original" href="assets/screenshots/darkmode/2_pukno_screen_activity.png" target="_blank" rel="noopener">Open full-size image</a></div>
-                        <div class="shot-copy">
-                            <h3>See where your time goes.</h3>
-                            <p>Understand your activity at a glance: total events, active time, average sessions and the
-                                applications you use most.</p>
-                        </div>
-                    </article>
-                    <article class="shot reveal">
-                        <div class="shot-media"><button type="button" class="screenshot-zoom" id="product-thumbnail-8" popovertarget="product-image-8" aria-label="Enlarge: PUKNO activity timeline with event context"><img src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
-                                data-dark-src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
-                                data-light-src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
-                                alt="PUKNO activity timeline with event context" loading="lazy"
-                                decoding="async"><span class="screenshot-zoom-hint" aria-hidden="true">Enlarge ↗</span></button><a class="screenshot-original" href="assets/screenshots/darkmode/3_pukno_screen_timeline.png" target="_blank" rel="noopener">Open full-size image</a></div>
-                        <div class="shot-copy">
-                            <h3>The detail behind the day.</h3>
-                            <p>Move from the shape of your day to a specific event. Its title, application, timestamps
-                                and preview help you place the moment.</p>
-                        </div>
-                    </article>
-                    <article class="shot reveal">
-                        <div class="shot-media"><button type="button" class="screenshot-zoom" id="product-thumbnail-9" popovertarget="product-image-9" aria-label="Enlarge: PUKNO Quick Look showing a captured screenshot"><img src="assets/screenshots/darkmode/3_pukno_screen_timeline_quicklook.png"
-                                data-dark-src="assets/screenshots/darkmode/3_pukno_screen_timeline_quicklook.png"
-                                data-light-src="assets/screenshots/darkmode/3_pukno_screen_timeline_quicklook.png"
-                                alt="PUKNO Quick Look showing a captured screenshot" loading="lazy"
-                                decoding="async"><span class="screenshot-zoom-hint" aria-hidden="true">Enlarge ↗</span></button><a class="screenshot-original" href="assets/screenshots/darkmode/3_pukno_screen_timeline_quicklook.png" target="_blank" rel="noopener">Open full-size image</a></div>
-                        <div class="shot-copy">
-                            <h3>Bring the moment back.</h3>
-                            <p>Open a captured screenshot in Quick Look to see the screen behind an event, not just its
-                                place in a list.</p>
-                        </div>
-                    </article>
-                    <article class="shot reveal">
-                        <div class="shot-media"><button type="button" class="screenshot-zoom" id="product-thumbnail-10" popovertarget="product-image-10" aria-label="Enlarge: PUKNO chat recalling YouTube viewing activity with context"><img src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
-                                data-dark-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
-                                data-light-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
-                                alt="PUKNO chat recalling YouTube viewing activity with context"
-                                loading="lazy" decoding="async"><span class="screenshot-zoom-hint" aria-hidden="true">Enlarge ↗</span></button><a class="screenshot-original" href="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png" target="_blank" rel="noopener">Open full-size image</a></div>
-                        <div class="shot-copy">
-                            <h3>A conversation with context.</h3>
-                            <p>Choose a local model and ask about your captured activity. Integrated memory brings
-                                relevant moments into chat, alongside your conversation history.</p>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="current-features reveal" aria-label="Current PUKNO features">
-                    <div class="current-feature">Local activity history</div>
-                    <div class="current-feature">Semantic memory search</div>
-                    <div class="current-feature">Memory in local AI chat</div>
-                    <div class="current-feature">Designed for macOS</div>
-                </div>
-
-                <p class="today-next reveal"><strong>Your activity, connected into memory.</strong>
-                    PUKNO brings your timeline, search, captured context and local AI chat together with semantic memory
-                    that connects the knowledge, media and ideas across your digital life — helping you recall moments
-                    and explore the connections between them.</p>
             </div>
         </section>
 
-        <section class="section light future" id="future">
-            <div class="container center">
-                <div class="eyebrow reveal">The PUKNO ecosystem</div>
-                <h2 class="display reveal">One memory.<br>Across your devices.</h2>
-                <p class="lead reveal">PUKNO starts on Mac. Future versions are designed to bring your personal context
-                    to iPhone through end-to-end encrypted sync — so what you capture in one place can help you
-                    somewhere else.</p>
-                <div class="ecosystem reveal">
+        <section class="section dark future" id="future" aria-labelledby="future-heading">
+            <div class="container">
+                <div class="future-intro">
+                    <div class="eyebrow reveal">PUKNO Future</div>
+                    <h2 class="display reveal" id="future-heading">One memory. Endless possibilities.</h2>
+                    <p class="lead reveal">Your personal memory shouldn't stop at one device — or at answering questions. We're building toward a future where your AI remembers your world and helps you get things done.</p>
+                </div>
+                <div class="future-roadmap">
+                    <article class="future-card reveal" aria-labelledby="future-sync-title">
+                        <div class="future-card-top"><span><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i> PUKNO Sync</span><span class="future-planned">Planned</span></div>
+                        <h3 id="future-sync-title">Your memory, wherever you go.</h3>
+                        <p class="future-card-description">Keep your memory connected across your Mac and iPhone with end-to-end encrypted sync. Only your authorized devices will be able to read it.</p>
+                        <div class="future-visual future-sync-visual">
+                <div class="ecosystem">
                     <div class="eco-mac">
                         <div class="escreen"><small>PUKNO on Mac</small><strong>What was the name of that restaurant
                                 from the island trip?</strong><span class="reply">Found in your photos and trip notes
@@ -862,27 +740,25 @@
                             class="reply">12 photos · July 2028</span>
                     </div>
                 </div>
-                <div class="future-features">
-                    <div class="compute reveal">
-                        <div class="future-icon" aria-hidden="true"><i class="fa-solid fa-arrows-rotate"></i></div>
-                        <div><small> <b>PUKNO Sync</b> - FUTURE</small>
-                            <h3>Your context, across your devices.</h3>
-                            <p>PUKNO Sync is intended to keep your memory and personal context available on your
-                                authorized devices using end-to-end encryption, while the synchronization layer moves
-                                encrypted data without needing to understand it.</p>
+
                         </div>
-                    </div>
-                    <div class="compute reveal">
-                        <div class="future-icon" aria-hidden="true"><i class="fa-solid fa-robot"></i></div>
-                        <div><small><b>PUKNO Agents </b> - FUTURE</small>
-                            <h3>Turn memory and context into action.</h3>
-                            <p><b>PUKNO</b> Agents are intended to retrieve the context relevant to your goal, choose
-                                the tools
-                                needed and carry out multiple steps across your computer, apps and connected services —
-                                always on your behalf.</p>
+                    </article>
+                    <article class="future-card reveal" aria-labelledby="future-agents-title">
+                        <div class="future-card-top"><span><i class="fa-solid fa-robot" aria-hidden="true"></i> PUKNO Agents</span><span class="future-planned">Read-only available · Actions planned</span></div>
+                        <h3 id="future-agents-title">From remembering to doing.</h3>
+                        <p class="future-card-description">Today, agents can read your local memory to retrieve relevant context, without changing data or taking actions. Multi-agent coordination and action-taking are planned — so a future agent could go from recalling a hotel you researched to preparing a booking for your review.</p>
+                        <div class="future-visual future-agent-visual">
+                            <div class="future-agent-window">
+                                <div class="future-agent-bar"><span>PUKNO AGENTS</span><span>Planned workflow · Not available yet</span></div>
+                                <div class="future-agent-prompt">Find that hotel I researched and prepare a booking.</div>
+                                <div class="future-agent-step"><i class="fa-solid fa-brain" aria-hidden="true"></i><div><small>Recalled from your memory</small><strong>The hotel you saved in your research</strong><span>Travel notes · Browsing history</span></div></div>
+                                <div class="future-agent-connector" aria-hidden="true"></div>
+                                <div class="future-agent-step"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i><div><strong>Preparing a booking</strong><span>Ready for your review. Nothing booked yet.</span></div></div>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
+                <p class="future-closing reveal"><i class="fa-solid fa-lock" aria-hidden="true"></i>One private memory powers it all.</p>
             </div>
         </section>
 
@@ -1056,292 +932,59 @@
 -->
         <!-- End disabled section: Why PUKNO. -->
 
-        <section class="section dark faq-section" id="faq">
+        <section class="section dark faq-section" id="faq" aria-labelledby="faq-title">
             <div class="container faq-layout">
-                <div class="faq-intro">
-                    <div class="eyebrow cyan reveal">Frequently asked questions</div>
-                    <h2 class="display reveal">A little more<br><span class="gradient">context.</span></h2>
-                    <p class="lead reveal">How PUKNO works today, where personal memory is going and
-                        how we're thinking about privacy along the way.
-                    </p>
+                <div class="faq-intro"><div class="eyebrow cyan">Frequently asked questions</div><h2 class="display" id="faq-title">Good questions.<br><span class="gradient">Clear answers.</span></h2><p class="lead">Everything you need to know about PUKNO, your privacy, and what&#x27;s coming next.</p></div>
+                <div class="faq-tabs" role="tablist" aria-label="Frequently asked questions">
+                    <button class="faq-tab" type="button" role="tab" id="faq-tab-0" aria-controls="faq-panel-0" aria-selected="true" tabindex="0">Getting Started</button>
+                    <button class="faq-tab" type="button" role="tab" id="faq-tab-1" aria-controls="faq-panel-1" aria-selected="false" tabindex="-1">Privacy &amp; Security</button>
+                    <button class="faq-tab" type="button" role="tab" id="faq-tab-2" aria-controls="faq-panel-2" aria-selected="false" tabindex="-1">What&#x27;s Next</button>
                 </div>
-                <div class="faq-list reveal">
-                    <details>
-                        <summary>What does PUKNO remember?</summary>
-                        <p>PUKNO begins by remembering the activity across your Mac — what apps you used, what you were
-                            working on and
-                            when it happened. It turns that activity into a searchable timeline that helps you return to
-                            things you may
-                            no longer remember exactly.</p>
-                    </details>
-                    <details>
-                        <summary>Does PUKNO work offline?</summary>
-                        <p>Yes. Today, PUKNO runs and processes your activity locally on your Mac. Core activity
-                            capture, history and
-                            local recall can work without sending your personal context to a remote AI service. </p>
-
-                        <p>Optional PUKNO Private Compute is available now for tasks that benefit from more powerful
-                            models. It requires an internet connection and your explicit consent. Connecting your own
-                            AI workstation is planned for a future version.</p>
-                    </details>
-                    <details>
-                        <summary>Does my data leave my device?</summary>
-                        <p>By default, PUKNO processes your activity and personal context locally on your Mac.</p>
-                        <p>If you explicitly approve Private Compute, context for your request is processed in a
-                            protected confidential-computing environment using settings you control. Cross-device
-                            sync remains a future feature and is planned to use end-to-end encryption.</p>
-                    </details>
-                    <details>
-                        <summary>Can PUKNO take actions for me?</summary>
-                        <p>
-                            Not yet. PUKNO is starting with memory, context and reasoning. Future PUKNO Agents are
-                            intended
-                            to go beyond answering questions by understanding what you want to accomplish, choosing the
-                            tools they need and carrying out the steps for you.
-                        </p>
-                        <p>
-                            That could mean finding information you saw before, working with files, navigating apps,
-                            creating calendar events, sending messages or completing multi-step tasks across your Mac
-                            and connected services.
-                        </p>
-                        <p>
-                            The difference is context: PUKNO Agents are intended to act using the personal memory PUKNO
-                            has already built, so you can ask things like “Book the hotel I was looking at last week”
-                            without having to explain everything again.
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary>Which platforms are supported?</summary>
-                        <p>
-                            <strong>macOS</strong><br>
-                            PUKNO is currently being built for macOS, with the first releases focused on Apple silicon
-                            Macs.
-                            The macOS version is the primary development target and the first platform where PUKNO's
-                            activity
-                            capture, local context and memory features are being developed.
-                        </p>
-
-                        <p>
-                            <strong>Windows</strong><br>
-                            Windows support is planned. PUKNO will use native Windows system and accessibility APIs to
-                            understand
-                            which applications, windows and workflows you're interacting with, allowing it to build the
-                            same kind
-                            of private activity context and personal memory available on macOS.
-                        </p>
-
-                        <p>
-                            <strong>Linux</strong><br>
-                            Linux support is also planned, with desktop-specific integrations rather than a single
-                            generic
-                            implementation. Initial targets include GNOME and COSMIC Desktop, with support shaped around
-                            the
-                            APIs and security model exposed by each desktop environment and compositor.
-                        </p>
-
-                        <p>
-                            Across every platform, the goal is the same: capture only the activity signals needed to
-                            build your
-                            personal context and PUKNO Memory while respecting the security, privacy and permission
-                            model of
-                            each operating system.
-                        </p>
-
-                    </details>
-
-                    <details>
-                        <summary>What is available now, and what is coming next?</summary>
-
-                        <div class="faq-roadmap">
-                            <div class="faq-roadmap-current">
-                                <h4>Available today</h4>
-
-                                <p>
-                                    <strong>PUKNO Activity Capture</strong><br>
-                                    PUKNO currently captures and organizes activity from your Mac — including the apps
-                                    you use, application
-                                    and window context, sessions, timestamps and supported web activity. This creates a
-                                    private activity
-                                    history of what you were doing and when, which PUKNO Memory uses for search and chat.
-                                </p>
-
-                                <p>
-                                    <strong>PUKNO Memory</strong><br>
-                                    Memory is integrated into search and chat. Search captured screenshots by topic,
-                                    ask about activity you remember, and retrieve relevant moments with their context
-                                    and source cards — including videos you watched.
-                                </p>
-
-                                <p>
-                                    <strong>PUKNO Private Compute</strong><br>
-                                    Requests run on your device by default. For more demanding tasks, Private Compute
-                                    gives you access to larger models in protected confidential-computing environments.
-                                    Remote processing requires your explicit consent and follows settings you control,
-                                    keeping your personal context private even when the model is remote.
-                                </p>
-                            </div>
-
-                            <div class="faq-roadmap-future">
-                                <h4>What we're building toward</h4>
-
-                                <p>
-                                    <strong>PUKNO Sync</strong><br>
-                                    PUKNO Sync is intended to make your memory, context and personal intelligence
-                                    available across your devices
-                                    while keeping that information private. Your activity, memories and personal context
-                                    would be protected with
-                                    end-to-end encryption so that only your authorized devices can access them.
-                                </p>
-
-                                <p>
-                                    The synchronization layer is intended to move encrypted data, not understand it.
-                                    Future PUKNO's sync should
-                                    not need access to the readable contents of your memory for your devices to stay
-                                    synchronized and continue building
-                                    the same personal context.
-                                </p>
-
-                                <p>
-                                    <strong>PUKNO Agents</strong><br>
-                                    PUKNO Agents are intended to turn memory, context and reasoning into action. An
-                                    agent could understand what you
-                                    want to accomplish, retrieve the relevant personal context, decide which tools are
-                                    needed and carry out multiple
-                                    steps across your computer, apps and connected services.
-                                </p>
-
-                                <p>
-                                    Instead of only answering “What hotel was I looking at?”, a PUKNO Agent could
-                                    eventually understand
-                                    “Book the hotel I was looking at last week,” recover the relevant memory, identify
-                                    the hotel you meant,
-                                    choose the appropriate tools and complete the task on your behalf.
-                                </p>
-                            </div>
-                        </div>
-
-                    </details>
-                    <details>
-                        <summary>What does PUKNO mean?</summary>
-                        <p>PUKNO comes from “Personalized Universal KNOwledge” — the idea of building private personal
-                            intelligence from
-                            what you've seen, learned, explored and created over time.</p>
-                    </details>
+                <div class="faq-list" role="tabpanel" id="faq-panel-0" aria-labelledby="faq-tab-0">
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-0-0" aria-expanded="false" aria-controls="faq-answer-0-0">What does PUKNO remember?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-0-0" role="region" aria-labelledby="faq-question-0-0" inert><div><p>PUKNO Memory turns activity on your Mac — apps, sessions and captured screenshots — into a searchable timeline. Find moments by topic or ask questions in chat, with relevant context and source cards.</p></div></div></article>
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-0-1" aria-expanded="false" aria-controls="faq-answer-0-1">Does PUKNO work offline?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-0-1" role="region" aria-labelledby="faq-question-0-1" inert><div><p>Yes. Activity capture, history and local AI recall run on your Mac without sending your personal context to a remote AI service. Optional Private Compute requires an internet connection.</p></div></div></article>
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-0-2" aria-expanded="false" aria-controls="faq-answer-0-2">Which platforms are supported?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-0-2" role="region" aria-labelledby="faq-question-0-2" inert><div><p>PUKNO is being built for macOS, with the first releases focused on Apple silicon Macs. Windows and Linux support are planned.</p></div></div></article>
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-0-3" aria-expanded="false" aria-controls="faq-answer-0-3">What does PUKNO mean?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-0-3" role="region" aria-labelledby="faq-question-0-3" inert><div><p>PUKNO stands for “Personalized Universal KNOwledge”: private personal intelligence built from what you’ve seen, learned and created.</p></div></div></article>
                 </div>
+                <div class="faq-list" role="tabpanel" id="faq-panel-1" aria-labelledby="faq-tab-1" hidden>
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-1-0" aria-expanded="false" aria-controls="faq-answer-1-0">Does my data leave my device?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-1-0" role="region" aria-labelledby="faq-question-1-0" inert><div><p>Your activity and personal context are processed locally by default. If you explicitly approve Private Compute, context for that request is processed remotely in a protected confidential-computing environment.</p></div></div></article>
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-1-1" aria-expanded="false" aria-controls="faq-answer-1-1">What is Private Compute?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-1-1" role="region" aria-labelledby="faq-question-1-1" inert><div><p>Private Compute gives you optional access to larger AI models for more demanding tasks. Remote processing requires your explicit consent and follows settings you control; local AI remains the default.</p></div></div></article>
+                </div>
+                <div class="faq-list" role="tabpanel" id="faq-panel-2" aria-labelledby="faq-tab-2" hidden>
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-2-0" aria-expanded="false" aria-controls="faq-answer-2-0">Will my memory sync across devices?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-2-0" role="region" aria-labelledby="faq-question-2-0" inert><div><p>PUKNO Sync is planned, not available yet. It is designed to connect your memory across devices using end-to-end encryption, so only your authorized devices can read it.</p></div></div></article>
+                    <article class="faq-card"><h3><button class="faq-question" type="button" id="faq-question-2-1" aria-expanded="false" aria-controls="faq-answer-2-1">Can PUKNO take actions for me?<span class="faq-icon" aria-hidden="true"></span></button></h3><div class="faq-answer" id="faq-answer-2-1" role="region" aria-labelledby="faq-question-2-1" inert><div><p>Not yet. Agents can currently read your local memory and retrieve context, but cannot change data or take actions. Multi-agent coordination and task execution are planned.</p></div></div></article>
+                </div>
+                <div class="faq-cta"><div><h3>Want to try PUKNO?</h3><p>Join the early-access list and help shape what comes next.</p></div><a class="pill" href="#notify" aria-haspopup="dialog">Get Early Access</a></div>
             </div>
         </section>
 
 
 
-        <section class="section dark cta" id="early">
-            <!-- <div class="container"> <img class="reveal" src="assets/pukno-logo.png" alt="PUKNO"> -->
-            <img src="assets/pukno-logo-darkmode.JPG" data-dark-src="assets/pukno-logo-darkmode.JPG" data-light-src="assets/pukno-logo-lightmode.JPG"
-                alt="PUKNO logo">
-
-            <div class="eyebrow cyan reveal">PUKNO</div>
-
-            <h2 class="display reveal">
-                Your private,&nbsp; personal <br>
-                <span class="gradient">AI memory.</span>
-            </h2>
-
-            <p class="lead reveal">
-                PUKNO remembers the context of your digital life — helping you understand what came before and act
-                on what matters next.
-            </p>
-
-            <a class="btn primary notify-trigger reveal" href="#notify" aria-haspopup="dialog">
-                <i class="fa-brands fa-apple" aria-hidden="true"></i>
-                Get early access
-            </a>
+        <section class="section dark cta" id="early" aria-labelledby="early-title">
+            <div class="container cta-content reveal">
+                <img src="assets/pukno-logo-darkmode.JPG" data-dark-src="assets/pukno-logo-darkmode.JPG" data-light-src="assets/pukno-logo-lightmode.JPG"
+                    alt="PUKNO logo" width="120" height="120" loading="lazy">
+                <h2 class="display" id="early-title">Your memories today.<br><span class="gradient">Your intelligence tomorrow.</span></h2>
+                <p class="lead">Every day adds to your personal memory. Give your AI the context to understand your past and help you make more of what comes next.</p>
+                <a class="btn primary notify-trigger" href="#notify" aria-haspopup="dialog">
+                    <i class="fa-brands fa-apple" aria-hidden="true"></i>
+                    Get Early Access
+                </a>
+                <p class="cta-note">Private by design. Built for Mac.</p>
             </div>
-
         </section>
     </main>
 
-    <div class="screenshot-lightbox" id="product-image-1" popover="auto" role="dialog" aria-label="PUKNO Search showing captured screenshots ranked by similarity to a topic" tabindex="-1">
-        <button type="button" class="screenshot-lightbox-backdrop" popovertarget="product-image-1" aria-label="Close enlarged screenshot" tabindex="-1" popovertargetaction="hide"></button>
-        <button type="button" class="screenshot-lightbox-close" popovertarget="product-image-1" aria-label="Close enlarged screenshot" popovertargetaction="hide">Close ×</button>
-        <img src="assets/screenshots/darkmode/4_pukno_screen_search_snapshot.png"
-                                    data-dark-src="assets/screenshots/darkmode/4_pukno_screen_search_snapshot.png"
-                                    data-light-src="assets/screenshots/darkmode/4_pukno_screen_search_snapshot.png"
-                                    alt="PUKNO Search showing captured screenshots ranked by similarity to a topic" decoding="async">
-    </div>
-    <div class="screenshot-lightbox" id="product-image-2" popover="auto" role="dialog" aria-label="PUKNO screenshot search results for Trump" tabindex="-1">
-        <button type="button" class="screenshot-lightbox-backdrop" popovertarget="product-image-2" aria-label="Close enlarged screenshot" tabindex="-1" popovertargetaction="hide"></button>
-        <button type="button" class="screenshot-lightbox-close" popovertarget="product-image-2" aria-label="Close enlarged screenshot" popovertargetaction="hide">Close ×</button>
-        <img src="assets/screenshots/darkmode/4_pukno_screen_search_trump.png"
-                                        data-dark-src="assets/screenshots/darkmode/4_pukno_screen_search_trump.png"
-                                        data-light-src="assets/screenshots/darkmode/4_pukno_screen_search_trump.png"
-                                        alt="PUKNO screenshot search results for Trump" decoding="async">
-    </div>
-    <div class="screenshot-lightbox" id="product-image-3" popover="auto" role="dialog" aria-label="PUKNO chat recalling YouTube viewing activity with context" tabindex="-1">
-        <button type="button" class="screenshot-lightbox-backdrop" popovertarget="product-image-3" aria-label="Close enlarged screenshot" tabindex="-1" popovertargetaction="hide"></button>
-        <button type="button" class="screenshot-lightbox-close" popovertarget="product-image-3" aria-label="Close enlarged screenshot" popovertargetaction="hide">Close ×</button>
-        <img src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
-                                    data-dark-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
-                                    data-light-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
-                                    alt="PUKNO chat recalling YouTube viewing activity with context" decoding="async">
-    </div>
-    <div class="screenshot-lightbox" id="product-image-4" popover="auto" role="dialog" aria-label="PUKNO chat recalling a YouTube viewing session with context" tabindex="-1">
-        <button type="button" class="screenshot-lightbox-backdrop" popovertarget="product-image-4" aria-label="Close enlarged screenshot" tabindex="-1" popovertargetaction="hide"></button>
-        <button type="button" class="screenshot-lightbox-close" popovertarget="product-image-4" aria-label="Close enlarged screenshot" popovertargetaction="hide">Close ×</button>
-        <img src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube_2.png"
-                                        data-dark-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube_2.png"
-                                        data-light-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube_2.png"
-                                        alt="PUKNO chat recalling a YouTube viewing session with context" decoding="async">
-    </div>
-    <div class="screenshot-lightbox" id="product-image-5" popover="auto" role="dialog" aria-label="PUKNO chronological activity timeline with application and session context" tabindex="-1">
-        <button type="button" class="screenshot-lightbox-backdrop" popovertarget="product-image-5" aria-label="Close enlarged screenshot" tabindex="-1" popovertargetaction="hide"></button>
-        <button type="button" class="screenshot-lightbox-close" popovertarget="product-image-5" aria-label="Close enlarged screenshot" popovertargetaction="hide">Close ×</button>
-        <img src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
-                                data-dark-src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
-                                data-light-src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
-                                alt="PUKNO chronological activity timeline with application and session context">
-    </div>
-    <div class="screenshot-lightbox" id="product-image-6" popover="auto" role="dialog" aria-label="PUKNO timeline search interface with application, activity, date and session filters" tabindex="-1">
-        <button type="button" class="screenshot-lightbox-backdrop" popovertarget="product-image-6" aria-label="Close enlarged screenshot" tabindex="-1" popovertargetaction="hide"></button>
-        <button type="button" class="screenshot-lightbox-close" popovertarget="product-image-6" aria-label="Close enlarged screenshot" popovertargetaction="hide">Close ×</button>
-        <img src="assets/screenshots/darkmode/3_pukno_screen_timeline_search.png"
-                                data-dark-src="assets/screenshots/darkmode/3_pukno_screen_timeline_search.png"
-                                data-light-src="assets/screenshots/darkmode/3_pukno_screen_timeline_search.png"
-                                alt="PUKNO timeline search interface with application, activity, date and session filters">
-    </div>
-    <div class="screenshot-lightbox" id="product-image-7" popover="auto" role="dialog" aria-label="PUKNO activity dashboard with event totals, active time and app usage" tabindex="-1">
-        <button type="button" class="screenshot-lightbox-backdrop" popovertarget="product-image-7" aria-label="Close enlarged screenshot" tabindex="-1" popovertargetaction="hide"></button>
-        <button type="button" class="screenshot-lightbox-close" popovertarget="product-image-7" aria-label="Close enlarged screenshot" popovertargetaction="hide">Close ×</button>
-        <img src="assets/screenshots/darkmode/2_pukno_screen_activity.png"
-                                data-dark-src="assets/screenshots/darkmode/2_pukno_screen_activity.png"
-                                data-light-src="assets/screenshots/darkmode/2_pukno_screen_activity.png"
-                                alt="PUKNO activity dashboard with event totals, active time and app usage" decoding="async">
-    </div>
-    <div class="screenshot-lightbox" id="product-image-8" popover="auto" role="dialog" aria-label="PUKNO activity timeline with event context" tabindex="-1">
-        <button type="button" class="screenshot-lightbox-backdrop" popovertarget="product-image-8" aria-label="Close enlarged screenshot" tabindex="-1" popovertargetaction="hide"></button>
-        <button type="button" class="screenshot-lightbox-close" popovertarget="product-image-8" aria-label="Close enlarged screenshot" popovertargetaction="hide">Close ×</button>
-        <img src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
-                                data-dark-src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
-                                data-light-src="assets/screenshots/darkmode/3_pukno_screen_timeline.png"
-                                alt="PUKNO activity timeline with event context"
-                                decoding="async">
-    </div>
-    <div class="screenshot-lightbox" id="product-image-9" popover="auto" role="dialog" aria-label="PUKNO Quick Look showing a captured screenshot" tabindex="-1">
-        <button type="button" class="screenshot-lightbox-backdrop" popovertarget="product-image-9" aria-label="Close enlarged screenshot" tabindex="-1" popovertargetaction="hide"></button>
-        <button type="button" class="screenshot-lightbox-close" popovertarget="product-image-9" aria-label="Close enlarged screenshot" popovertargetaction="hide">Close ×</button>
-        <img src="assets/screenshots/darkmode/3_pukno_screen_timeline_quicklook.png"
-                                data-dark-src="assets/screenshots/darkmode/3_pukno_screen_timeline_quicklook.png"
-                                data-light-src="assets/screenshots/darkmode/3_pukno_screen_timeline_quicklook.png"
-                                alt="PUKNO Quick Look showing a captured screenshot"
-                                decoding="async">
-    </div>
-    <div class="screenshot-lightbox" id="product-image-10" popover="auto" role="dialog" aria-label="PUKNO chat recalling YouTube viewing activity with context" tabindex="-1">
-        <button type="button" class="screenshot-lightbox-backdrop" popovertarget="product-image-10" aria-label="Close enlarged screenshot" tabindex="-1" popovertargetaction="hide"></button>
-        <button type="button" class="screenshot-lightbox-close" popovertarget="product-image-10" aria-label="Close enlarged screenshot" popovertargetaction="hide">Close ×</button>
-        <img src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
-                                data-dark-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
-                                data-light-src="assets/screenshots/darkmode/5_pukno_screen_chat_youtube.png"
-                                alt="PUKNO chat recalling YouTube viewing activity with context" decoding="async">
-    </div>
+
+
+
+
+
+
+
+
+
+
 
     <div id="notify" class="notify-modal">
         <a href="#early" class="notify-modal-bg" aria-label="Close notification form"></a>
