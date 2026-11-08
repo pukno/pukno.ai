@@ -4559,8 +4559,18 @@ footer, [data-theme="light"] footer { background: var(--mono-subtle); color: var
 .future-closing i { font-size: 11px; }
 @media (max-width: 700px) {
     .future-card { padding: 24px 18px; border-radius: 20px; }
-    .future-card .eco-mac .escreen { min-height: 280px; padding: 24px 18px; }
-        .future-card .escreen strong { margin-top: 28px; }
-    .future-card .ecosystem { margin-top: 24px; }
+    .future-card .eco-mac { width: 93%; }
+    .future-card .eco-mac .escreen {
+        min-height: 0;
+        padding: clamp(12px, 3vw, 24px);
+        border-width: 6px;
+        border-radius: 14px;
+        overflow-wrap: anywhere;
+    }
+    .future-card .escreen small { font-size: 10px; }
+    .future-card .escreen strong { font-size: clamp(14px, 3.4vw, 21px); margin-top: 14px; }
+    .future-card .escreen .reply { margin-top: 12px; padding: 8px 10px; border-radius: 12px; }
+    .future-card .eco-mac .ebase { height: 12px; }
+    .future-card .ecosystem { grid-template-columns: minmax(0, 1fr); margin-top: 24px; }
     .future-agent-window { padding: 20px; }
 }
