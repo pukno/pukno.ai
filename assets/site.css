@@ -4397,18 +4397,7 @@ footer, [data-theme="light"] footer { background: var(--mono-subtle); color: var
 }
 
 /* Local-first privacy: a contained memory, with details outside the card grid. */
-/* Keep the privacy illustration and disclosures light in either site theme. */
-.privacy-layout,
-.privacy-details {
-    --mono-page: #fff;
-    --mono-subtle: #f7f7f7;
-    --mono-card: #f8f8f8;
-    --mono-ink: #111;
-    --mono-muted: #666;
-    --mono-border: rgba(0,0,0,.105);
-    color: var(--mono-ink);
-    color-scheme: light;
-}
+
 .privacy-heading { max-width: 940px; margin-bottom: 48px; }
 .privacy-heading .lead { max-width: 760px; }
 .privacy-layout { display: grid; grid-template-columns: 1.1fr 1fr; gap: 24px; align-items: stretch; }
@@ -4498,3 +4487,56 @@ footer, [data-theme="light"] footer { background: var(--mono-subtle); color: var
     .today-walkthrough iframe { max-width: 440px; }
 }
 @media (prefers-reduced-motion: reduce) { .today-panel { animation: none; } .today-tab { transition: none; } }
+
+/* Future capabilities share equal weight; all previews are explicitly planned. */
+.future { background: var(--mono-page); color: var(--mono-ink); }
+.future-intro { max-width: 940px; margin-bottom: 48px; }
+.future-intro .lead { max-width: 800px; }
+.future-roadmap { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; }
+.future-card { min-width: 0; display: flex; flex-direction: column; padding: 30px; border: 1px solid var(--mono-border); border-radius: 24px; background: var(--mono-card); }
+.future-card-top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
+.future-card-top > span:first-child { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; }
+.future-planned { padding: 6px 10px; border: 1px solid var(--mono-border); border-radius: 100px; color: var(--mono-muted); font-size: 11px; }
+.future-card h3 { font-size: clamp(25px, 2.8vw, 34px); letter-spacing: -.045em; line-height: 1.15; margin: 0 0 16px; }
+.future-card-description { color: var(--mono-muted); font-size: 15px; line-height: 1.7; margin: 0 0 32px; }
+.future-visual { min-height: 330px; margin-top: auto; display: flex; align-items: center; min-width: 0; padding-top: 22px; border-top: 1px solid var(--mono-border); }
+.future-card .ecosystem { width: 100%; max-width: 960px; margin: 32px auto 24px; }
+@media (min-width: 981px) {
+    .future-card .ecosystem { grid-template-columns: minmax(0, 1fr) 150px 210px; }
+}
+.future-card .eco-mac { width: 100%; max-width: 540px; min-width: 0; margin-inline: auto; }
+.future-card .eco-mac .escreen {
+    height: auto;
+    min-height: 300px;
+    aspect-ratio: 16 / 10;
+    background: radial-gradient(ellipse at 25% 15%, rgba(95, 160, 153, .24), transparent 65%), linear-gradient(145deg, #102222, #071010 80%);
+}
+.future-card .escreen strong { font-size: clamp(21px, 2.4vw, 27px); line-height: 1.2; margin-top: 38px; }
+.future-card .escreen .reply { margin-top: 24px; }
+.future-card .iphone { width: 210px; max-width: 100%; height: 350px; padding: 48px 16px 18px; border: 7px solid #454d4d; border-radius: 36px; box-shadow: 0 20px 50px rgba(0, 0, 0, .2); }
+.future-card .iphone .island { width: 68px; height: 18px; top: 10px; }
+.future-card .iphone strong { font-size: 20px; margin-top: 38px; }
+.future-card .iphone .reply { margin-top: 22px; }
+/* Device screens stay dark in both themes, so their labels need a fixed light color. */
+.future-card .escreen small,
+.future-card .iphone small { display: block; color: #f5f5f7; font-size: 13px; font-weight: 600; line-height: 1.5; letter-spacing: .06em; }
+.future-card-description { max-width: 760px; }
+.future-agent-window { width: 100%; max-width: 760px; margin: 28px auto; padding: 32px; background: var(--mono-subtle); border: 1px solid var(--mono-border); border-radius: 16px; }
+.future-agent-bar { display: flex; justify-content: space-between; gap: 12px; color: var(--mono-muted); font-size: 11px; letter-spacing: .05em; }
+.future-agent-prompt { margin: 18px 0; padding: 12px 14px; background: var(--mono-card); border: 1px solid var(--mono-border); border-radius: 12px 12px 3px 12px; font-size: 16px; line-height: 1.5; }
+.future-agent-step { display: flex; align-items: flex-start; gap: 12px; }
+.future-agent-step > i { display: grid; place-items: center; flex: 0 0 30px; height: 30px; border: 1px solid var(--mono-border); border-radius: 9px; font-size: 12px; }
+.future-agent-step small, .future-agent-step strong, .future-agent-step span { display: block; }
+.future-agent-step small { color: var(--mono-muted); font-size: 12px; margin-bottom: 5px; }
+.future-agent-step strong { font-size: 16px; font-weight: 500; line-height: 1.5; }
+.future-agent-step span { color: var(--mono-muted); font-size: 13px; line-height: 1.5; margin-top: 4px; }
+.future-agent-connector { height: 28px; margin: 6px 0 6px 14px; border-left: 2px solid var(--mono-muted); }
+.future-closing { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 32px 0 0; text-align: center; color: var(--mono-muted); font-size: 14px; line-height: 1.6; }
+.future-closing i { font-size: 11px; }
+@media (max-width: 700px) {
+    .future-card { padding: 24px 18px; border-radius: 20px; }
+    .future-card .eco-mac .escreen { min-height: 280px; padding: 24px 18px; }
+        .future-card .escreen strong { margin-top: 28px; }
+    .future-card .ecosystem { margin-top: 24px; }
+    .future-agent-window { padding: 20px; }
+}
