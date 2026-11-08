@@ -2416,28 +2416,52 @@ img {
     .faq-answer, .faq-icon::after, .faq-tab { transition: none; }
 }
 
-.cta {
-    padding: 145px 0;
+.cta#early {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: clamp(96px, 12vw, 170px) 0;
     text-align: center;
-    background: radial-gradient(circle at 50% 45%, rgba(var(--accent-rgb), .1), transparent 28%), #000
+    background: var(--mono-page);
 }
+
+.cta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: radial-gradient(ellipse at 50% 38%, rgba(255, 255, 255, .055), transparent 65%);
+}
+
+[data-theme="light"] .cta::before {
+    background: radial-gradient(ellipse at 50% 38%, rgba(0, 0, 0, .04), transparent 65%);
+}
+
+.cta-content { max-width: 1080px; }
+.cta .display { font-size: clamp(36px, 5.6vw, 72px); line-height: 1.12; letter-spacing: -.055em; margin: 0 auto 30px; }
+.cta .cta-note { margin: 22px 0 0; color: var(--mono-muted); font-size: 13px; letter-spacing: .025em; line-height: 1.6; }
 
 .cta img {
     width: 120px;
     height: 120px;
     border-radius: 34px;
-    margin: 0 auto 36px;
-    box-shadow: 0 0 45px rgba(var(--accent-rgb), .16)
+    display: block;
+    margin: 0 auto 44px;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, .18)
 }
 
 .cta .lead {
-    max-width: 680px;
-    margin: 0 auto
+    max-width: 660px;
+    margin: 0 auto;
+    color: var(--mono-muted);
+    font-size: clamp(17px, 2vw, 20px);
+    line-height: 1.75;
 }
 
 .cta .notify-trigger {
-    gap: 8px;
-    margin-top: 26px
+    gap: 10px;
+    margin-top: 38px;
 }
 
 .cta .notify-trigger i {
@@ -2505,7 +2529,9 @@ img {
     height: 170px;
     border: 0;
     border-radius: 12px;
-    background: rgba(255, 255, 255, .02)
+    /* The external Tally form uses light text and cannot inherit our theme. */
+    background: #101010;
+    color-scheme: dark;
 }
 
 .notify-modal-close {
