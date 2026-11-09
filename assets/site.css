@@ -4278,6 +4278,11 @@ body { color: var(--mono-ink); font-family: -apple-system, BlinkMacSystemFont, "
     padding-top: 155px;
     padding-bottom: 104px;
 }
+.hero.hero--compact {
+    min-height: auto;
+    padding-bottom: 48px;
+}
+.hero--compact .hero-copy > .small-note { margin: 8px 0 0; }
 .hero:before, [data-theme="light"] .hero:before { display: none; }
 .hero h1 { font-weight: 800; letter-spacing: -.082em; line-height: .96; }
 .hero .lead { font-weight: 400; letter-spacing: -.025em; }
@@ -4288,6 +4293,7 @@ body { color: var(--mono-ink); font-family: -apple-system, BlinkMacSystemFont, "
 .hero-details { border-top: 1px solid var(--mono-border); color: var(--mono-muted); }
 .hero-logo { box-shadow: none; }
 @media (min-width: 981px) {
+    .hero.hero--compact { padding-top: 120px; padding-bottom: 24px; }
     .hero--split .hero-layout { grid-template-columns: minmax(0, .88fr) minmax(0, 1.22fr); align-items: center; gap: clamp(45px, 5vw, 85px); }
     .hero--split .hero-copy { container-type: inline-size; }
     .hero--split h1 { font-size: min(93.5px, 13.2cqw); white-space: nowrap; }
